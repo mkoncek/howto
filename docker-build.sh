@@ -4,8 +4,8 @@ set -e
 
 # variable ${COMMIT_MESSAGE} provided from the outside
 
-# --setopt=tsflags=
-# Reason: Reset dnf flags in order ot install documentation files including manpages
+# Reason for "--setopt=tsflags=":
+# Reset dnf flags in order to install documentation files including manpages
 dnf -y --setopt=tsflags= install asciidoc dia git javapackages-local javapackages-tools m4 make man python3-ansi2html
 
 git config --global user.name 'Jenkins CI'
@@ -26,8 +26,7 @@ mv ../howto/modules .
 git add modules
 
 # Push only when there are changes to the generated documentation
-if git commit -m "${COMMIT_MESSAGE}"
-then
+if git commit -m "${COMMIT_MESSAGE}"; then
 	git push origin
 fi
 
