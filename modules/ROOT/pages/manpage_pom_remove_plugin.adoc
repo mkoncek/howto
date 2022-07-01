@@ -1,0 +1,6 @@
+=== pom_remove_plugin
+
+++++++++++++++++++++++++++
+
+include::example$manpages/pom_remove_plugin.7.html[]
+++++++++++++++++++++++++++

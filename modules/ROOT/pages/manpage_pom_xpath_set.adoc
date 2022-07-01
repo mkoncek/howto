@@ -1,0 +1,6 @@
+=== pom_xpath_set
+
+++++++++++++++++++++++++++
+
+include::example$manpages/pom_xpath_set.7.html[]
+++++++++++++++++++++++++++

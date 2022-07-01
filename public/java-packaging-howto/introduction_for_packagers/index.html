@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled :: Local Preview</title>
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="java-packaging-howto" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Java-Packaging HOWTO</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../introduction/">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="./">For Packagers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_developers/">For Java Developers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora_java_specifics/">Fedora Java Specifics for Users and Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../fedora_java_packaging_specifics/">Fedora Java Specifics for Packagers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../directory_layout/">Directory Layout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jar_file_id/">JAR File Identification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dependency_handling/">Dependency Handling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javadoc_packages/">Javadoc packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core_java_packages/">Core Java packages</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../packaging_best_practices/">Packaging Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../generic_java_build/">Generic Java Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ant/">Ant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../maven/">Maven</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../packaging_maven_project/">Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mvn_macros/">Macros for Maven packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../pom_macros/">Macros for POM modification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../gradle/">Gradle</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../common_errors/">Common Errors</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../migration/">Migration from older tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../manpages/">Manual pages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_alias/">mvn_alias</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_artifact/">mvn_artifact</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_build/">mvn_build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_compat_version/">mvn_compat_version</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_config/">mvn_config</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_file/">mvn_file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_install/">mvn_install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_package/">mvn_package</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_dep/">pom_add_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_parent/">pom_add_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_plugin/">pom_add_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_change_dep/">pom_change_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_disable_module/">pom_disable_module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_dep/">pom_remove_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_parent/">pom_remove_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_plugin/">pom_remove_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_set_parent/">pom_set_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_disable/">pom_xpath_disable</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_inject/">pom_xpath_inject</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_remove/">pom_xpath_remove</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_replace/">pom_xpath_replace</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_set/">pom_xpath_set</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java-Packaging HOWTO</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java-Packaging HOWTO</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Java-Packaging HOWTO</a></li>
+    <li class="crumb HA"><a href="../introduction/">Introduction</a></li>
+    <li class="crumb HA"><a href="./">For Packagers</a></li>
+  </ul>
+  
+</nav>
+  <div class="edit-this-page"><a href="https://pagure.io/java-packaging-howto/blob/master/f/modules/ROOT/pages/introduction_for_packagers.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect2">
+<h3 id="XFor_Packagers"><a class="anchor" href="#XFor_Packagers"></a>For Packagers</h3>
+<div class="paragraph">
+<p>Java is a programming language which is usually compiled into bytecode for JVM
+(Java Virtual Machine). For more details about the JVM and bytecode
+specification see
+<a href="http://docs.oracle.com/javase/specs/jvms/se8/html/index.html">JVM documentation</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="_example_java_project"><a class="anchor" href="#_example_java_project"></a>Example Java Project</h4>
+<div class="paragraph">
+<p>To better illustrate various parts of Java packaging we will dissect simple Java
+<code>Hello world</code> application. Java sources are usually organized using directory
+hierarchies. Shared directory hierarchy creates a namespace called <code>package</code> in
+Java terminology. To understand naming mechanisms of Java <code>packages</code> see
+<a href="http://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html">Javapackage naming conventions</a>.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s create a simple hello world application that will execute following steps
+when run:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Ask for a name</p>
+</li>
+<li>
+<p>Print out <code>Hello World from</code> and the name from previous step</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>To illustrate certain points we artificially complicate things by creating:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Input</code> class used only for input of text from terminal</p>
+</li>
+<li>
+<p><code>Output</code> class used only for output on terminal</p>
+</li>
+<li>
+<p><code>HelloWorldApp</code> class used as main application</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">Directory listing of example project</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ find .
+.
+./Makefile
+./src
+./src/org
+./src/org/fedoraproject
+./src/org/fedoraproject/helloworld
+./src/org/fedoraproject/helloworld/output
+./src/org/fedoraproject/helloworld/output/Output.java
+./src/org/fedoraproject/helloworld/input
+./src/org/fedoraproject/helloworld/input/Input.java
+./src/org/fedoraproject/helloworld/HelloWorld.java</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this project all packages are under <code>src/</code> directory hierarchy.</p>
+</div>
+<div class="listingblock">
+<div class="title">HelloWorld.java listing</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">package org.fedoraproject.helloworld;
+
+// import Input class from org.fedoraproject.helloworld.input package
+import org.fedoraproject.helloworld.input.Input;
+// import Output class from org.fedoraproject.helloworld.output package
+import org.fedoraproject.helloworld.output.Output;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.print("What is your name?: ");
+        String reply = Input.getInput();
+        Output.output(reply);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Java packages</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">org/fedoraproject/helloworld/input/Input.java
+org/fedoraproject/helloworld/output/Output.java
+org/fedoraproject/helloworld/HelloWorld.java</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Although the directory structure of our package is hierarchical, there
+is no real parent-child relationship between packages. Each package is
+therefore seen as independent.
+Above example makes use of three separate packages:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>org.fedoraproject.helloworld.input</code></p>
+</li>
+<li>
+<p><code>org.fedoraproject.helloworld.output</code></p>
+</li>
+<li>
+<p><code>org.fedoraproject.helloworld</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Environment setup consists of two main parts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Telling JVM which Java class contains <code>main()</code> method</p>
+</li>
+<li>
+<p>Adding required JAR files on JVM classpath</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_compiling_our_project"><a class="anchor" href="#_compiling_our_project"></a>Compiling our project</h4>
+<div class="paragraph">
+<p>The sample project can be compiled to a bytecode by Java compiler. Java
+compiler can be typically invoked from command line by command <code>javac</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ javac $(find -name '*.java')</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For every <code>.java</code> file corresponding <code>.class</code> file will be created. The
+<code>.class</code> files contain Java bytecode which is meant to be executed on
+JVM.</p>
+</div>
+<div class="paragraph">
+<p>One could put invocation of <code>javac</code> to Makefile and simplify the
+compilation a bit. It might be sufficient for such a simple project, but
+it would quickly become hard to build more complex projects with this
+approach. Java world knows several high-level build systems which can
+highly simplify building of Java projects. Among the others, probably
+most known are <a href="http://maven.apache.org/">Apache Maven</a>,
+<a href="http://ant.apache.org/">Apache Ant</a> and <a href="http://www.gradle.org/">Gradle</a>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>See also <a href="../maven/#maven" class="xref page">Maven</a> and <a href="../ant/#ant" class="xref page">Ant</a> sections.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_jar_files"><a class="anchor" href="#_jar_files"></a>JAR files</h5>
+<div class="paragraph">
+<p>Having our application split across many <code>.class</code> files would not be very
+practical, so those <code>.class</code> files are assembled into ZIP files with
+specific layout called JAR files. Most commonly these special ZIP files
+have <code>.jar</code> suffix, but other variations exist (<code>.war</code>, <code>.ear</code>). They
+contain:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Compiled bytecode of our project</p>
+</li>
+<li>
+<p>Additional metadata stored in <code>META-INF/MANIFEST.MF</code> file</p>
+</li>
+<li>
+<p>Resource files such as images or localisation data</p>
+</li>
+<li>
+<p>Optionaly the source code of our project (called source JAR then)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>They can also contain additional bundled software which is something
+we do not want to have in packages. You can inspect the contents of given
+JAR file by extracting it. That can be done with following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">jar xf something.jar</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The detailed description of JAR file format is in the
+<a href="http://docs.oracle.com/javase/8/docs/technotes/guides/jar/jar.html">JAR File
+Specification</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_classpath"><a class="anchor" href="#_classpath"></a>Classpath</h5>
+<div class="paragraph">
+<p>The classpath is a way of telling JVM where to look for user classes
+and 3rd party libraries. By default, only current directory is searched,
+all other locations need to be specified explicitly by setting up
+CLASSPATH environment variable, or via <code>-cp</code> (<code>-classpath</code>) option of a
+Java Virtual Machine.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_setting_the_classpath"><a class="anchor" href="#_setting_the_classpath"></a>Setting the classpath</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">java -cp /usr/share/java/log4j.jar:/usr/share/java/junit.jar mypackage/MyClass.class
+CLASSPATH=/usr/share/java/log4j.jar:/usr/share/java/junit.jar java mypackage/MyClass.class</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Please note that two JAR files are separated by colon in a classpath
+definition.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>See
+<a href="http://docs.oracle.com/javase/8/docs/technotes/tools/windows/classpath.html">official documentation</a>
+for more information about classpath.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_wrapper_scripts"><a class="anchor" href="#_wrapper_scripts"></a>Wrapper scripts</h5>
+<div class="paragraph">
+<p>Classic compiled applications use dynamic linker to find dependencies (linked
+libraries), Python interpreter has predefined directories where it searches for
+imported modules. JVM itself has no embedded knowledge of installation paths and
+thus no automatic way to resolve dependencies of Java projects. This means that
+all Java applications have to use wrapper shell scripts to setup the environment
+before invoking the JVM and running the application itself. Note that this is
+not necessary for libraries.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_build_system_identification"><a class="anchor" href="#_build_system_identification"></a>Build System Identification</h4>
+<div class="paragraph">
+<p>Build system used by upstream can be usually identified by looking at
+their configuration files, which reside in project directory structure,
+usually in its root or in specialized directories with names such as
+<code>build</code> or <code>make</code>.</p>
+</div>
+<div class="sect4">
+<h5 id="_maven"><a class="anchor" href="#_maven"></a>Maven</h5>
+<div class="paragraph">
+<p>Build managed by Apache Maven is configured by an XML file that is by
+default named <code>pom.xml</code>. In its simpler form it usually looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd"&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;groupId&gt;com.example.myproject&lt;/groupId&gt;
+    &lt;artifactId&gt;myproject&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+    &lt;version&gt;1.0&lt;/version&gt;
+    &lt;name&gt;myproject&lt;/name&gt;
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;junit&lt;/groupId&gt;
+            &lt;artifactId&gt;junit&lt;/artifactId&gt;
+            &lt;version&gt;4.1&lt;/version&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+&lt;/project&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It describes project&#8217;s build process in a declarative way, without
+explicitly specifying exact steps needed to compile sources and assemble
+pieces together. It also specifies project&#8217;s dependencies which are
+usually the main point of interest for packagers. Other important
+feature of Maven that packagers should know about are plugins. Plugins
+extend Maven with some particular functionality, but unfortunately some
+of them may get in the way of packaging and need to be altered or
+removed. There are RPM macros provided to facilitate modifying Maven
+dependencies and plugins.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_ant"><a class="anchor" href="#_ant"></a>Ant</h5>
+<div class="paragraph">
+<p>Apache Ant is also configured by an XML file. It is by convention named
+<code>build.xml</code> and in its simple form it looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;project name="MyProject" default="dist" basedir="."&gt;
+  &lt;property name="src" location="src"/&gt;
+  &lt;property name="build" location="build"/&gt;
+  &lt;property name="dist" location="dist"/&gt;
+
+  &lt;target name="init" description="Create build directory"&gt;
+    &lt;mkdir dir="${build}"/&gt;
+  &lt;/target&gt;
+
+  &lt;target name="compile" depends="init"
+        description="Compile the source"&gt;
+    &lt;javac srcdir="${src}" destdir="${build}"/&gt;
+  &lt;/target&gt;
+
+  &lt;target name="dist" depends="compile"
+        description="Generate jar"&gt;
+    &lt;mkdir dir="${dist}/lib"/&gt;
+
+    &lt;jar jarfile="${dist}/myproject.jar" basedir="${build}"/&gt;
+  &lt;/target&gt;
+
+  &lt;target name="clean" description="Clean build files"&gt;
+    &lt;delete dir="${build}"/&gt;
+    &lt;delete dir="${dist}"/&gt;
+  &lt;/target&gt;
+&lt;/project&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ant build file consists mostly of targets, which are collections of
+steps needed to accomplish intended task. They usually depend on each
+other and are generally similar to Makefile targets. Available targets
+can be listed by invoking <code>ant -p</code> in project directory containing
+<code>build.xml</code> file. If the file is named differently than <code>build.xml</code> you
+have to tell Ant which file should be used by using <code>-f</code> option with the
+name of the actual build file.</p>
+</div>
+<div class="paragraph">
+<p>Some projects that use Apache Ant also use Apache Ivy to simplify
+dependency handling. Ivy is capable of resolving and downloading
+artifacts from Maven repositories which are declaratively described in
+XML. Project usually contains one or more <code>ivy.xml</code> files specifying the
+module Maven coordinates and its dependencies. Ivy can also be used
+directly from Ant build files. To detect whether the project you wish to
+package is using Apache Ivy, look for files named <code>ivy.xml</code> or nodes in
+the <code>ivy</code> namespace in project&#8217;s build file.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_gradle"><a class="anchor" href="#_gradle"></a>Gradle</h5>
+<div class="paragraph">
+<p>Gradle is configured by a script written in Groovy (dynamic language
+built on top of JVM and extending Java&#8217;s syntax). It is configuration
+file is <code>build.gradle</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-gradle hljs" data-lang="gradle">apply plugin: 'java'
+
+task customJar(type: Jar) {
+  archiveName = 'myproject.jar'
+  destinationDir = file("${buildDir}/jars")
+  from sourceSets.main.output
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_make"><a class="anchor" href="#_make"></a>Make</h5>
+<div class="paragraph">
+<p>While unlikely, it is still possible that you encounter a project whose
+build is managed by plain old Makefiles. They contain a list of targets
+which consist of commands (marked with tab at the begining of line) and
+are invoked by <code>make &lt;target&gt;</code> or simply <code>make</code> to run the default
+target.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_quiz_for_packagers"><a class="anchor" href="#_quiz_for_packagers"></a>Quiz for Packagers</h4>
+<div class="paragraph">
+<p>At this point you should have enough knowledge about Java to start
+packaging. If you are not able to answer following questions return back to
+previous sections or ask experienced packagers for different explanations of
+given topics.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>What is the difference between JVM and Java?</p>
+</li>
+<li>
+<p>What is a CLASSPATH environment variable and how can you use it?</p>
+</li>
+<li>
+<p>Name two typical Java build systems and how you can identify which one is being used</p>
+</li>
+<li>
+<p>What is the difference between <code>java</code> and <code>javac</code> comands?</p>
+</li>
+<li>
+<p>What are contents of a typical <code>JAR</code> file?</p>
+</li>
+<li>
+<p>What is a pom.xml file and what information it contains?</p>
+</li>
+<li>
+<p>How would you handle packaging software that contains <code>lib/junit4.jar</code> inside
+source tarball?</p>
+</li>
+<li>
+<p>Name at least three methods for bundling code in Java projects</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

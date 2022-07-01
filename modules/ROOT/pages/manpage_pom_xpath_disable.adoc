@@ -1,0 +1,6 @@
+=== pom_xpath_disable
+
+++++++++++++++++++++++++++
+
+include::example$manpages/pom_xpath_disable.7.html[]
+++++++++++++++++++++++++++

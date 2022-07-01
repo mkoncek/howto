@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled :: Local Preview</title>
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="java-packaging-howto" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Java-Packaging HOWTO</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../introduction/">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_packagers/">For Packagers</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="./">For Java Developers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora_java_specifics/">Fedora Java Specifics for Users and Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../fedora_java_packaging_specifics/">Fedora Java Specifics for Packagers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../directory_layout/">Directory Layout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jar_file_id/">JAR File Identification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dependency_handling/">Dependency Handling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javadoc_packages/">Javadoc packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core_java_packages/">Core Java packages</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../packaging_best_practices/">Packaging Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../generic_java_build/">Generic Java Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ant/">Ant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../maven/">Maven</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../packaging_maven_project/">Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mvn_macros/">Macros for Maven packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../pom_macros/">Macros for POM modification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../gradle/">Gradle</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../common_errors/">Common Errors</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../migration/">Migration from older tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../manpages/">Manual pages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_alias/">mvn_alias</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_artifact/">mvn_artifact</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_build/">mvn_build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_compat_version/">mvn_compat_version</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_config/">mvn_config</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_file/">mvn_file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_install/">mvn_install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_package/">mvn_package</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_dep/">pom_add_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_parent/">pom_add_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_plugin/">pom_add_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_change_dep/">pom_change_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_disable_module/">pom_disable_module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_dep/">pom_remove_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_parent/">pom_remove_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_plugin/">pom_remove_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_set_parent/">pom_set_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_disable/">pom_xpath_disable</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_inject/">pom_xpath_inject</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_remove/">pom_xpath_remove</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_replace/">pom_xpath_replace</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_set/">pom_xpath_set</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java-Packaging HOWTO</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java-Packaging HOWTO</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Java-Packaging HOWTO</a></li>
+    <li class="crumb HA"><a href="../introduction/">Introduction</a></li>
+    <li class="crumb HA"><a href="./">For Java Developers</a></li>
+  </ul>
+  
+</nav>
+  <div class="edit-this-page"><a href="https://pagure.io/java-packaging-howto/blob/master/f/modules/ROOT/pages/introduction_for_developers.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect2">
+<h3 id="XFor_Devs"><a class="anchor" href="#XFor_Devs"></a>For Java Developers</h3>
+<div class="paragraph">
+<p>Packaging Java software has specifics which we will try to cover in this section
+aimed at Java developers who are already familiar with Java language, JVM,
+classpath handling, Maven, pom.xml file structure and dependencies.</p>
+</div>
+<div class="paragraph">
+<p>Instead we will focus on basic packaging tools and relationships between Java
+and RPM world. One of the most important questions is: What is the reason to
+package software in RPM (or other distribution-specific formats). There are
+several reasons for it, among others:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Unified way of installation of software for users of distribution regardless
+of upstream projects</p>
+</li>
+<li>
+<p>Verification of authenticity of software packages by signing them</p>
+</li>
+<li>
+<p>Simplified software updates</p>
+</li>
+<li>
+<p>Automatic handling of dependencies for users</p>
+</li>
+<li>
+<p>Common filesystem layout across distribution enforced by packaging standards</p>
+</li>
+<li>
+<p>Ability to administer, monitor and query packages installed on several
+machines through unified interfaces</p>
+</li>
+<li>
+<p>Distribution of additional metadata with the software itself such as
+licenses used, homepage for the project, changelogs and other information
+that users or administrators can find useful</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_example_rpm_project"><a class="anchor" href="#_example_rpm_project"></a>Example RPM Project</h4>
+<div class="paragraph">
+<p>RPM uses <code>spec</code> files as recipes for building software packages.  We
+will use it to package example project created in previous section. If
+you did not read it you do not need to; the file listing is available here
+and the rest is not necessary for this section.</p>
+</div>
+<div class="listingblock">
+<div class="title">Directory listing</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">Makefile
+src
+src/org
+src/org/fedoraproject
+src/org/fedoraproject/helloworld
+src/org/fedoraproject/helloworld/output
+src/org/fedoraproject/helloworld/output/Output.java
+src/org/fedoraproject/helloworld/input
+src/org/fedoraproject/helloworld/input/Input.java
+src/org/fedoraproject/helloworld/HelloWorld.java</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We packed the project directory into file <code>helloworld.tar.gz</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example spec file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Comments start with hash sign. Caution: macros in comments are still
+# expanded, which can lead to unexpected results. To stop macro from expanding,
+# double its percent sign (e.g. %%mvn_install)
+
+# First part usually consists of metadata such as package name, version, and
+# much more
+Name:		helloworld
+Version:	1.0
+Release:	1%{?dist}
+Summary:	This is a minimal spec file example
+
+License:	GPLv2+
+# Homepage URL of the project
+URL:		http://www.fedoraproject.org
+
+# Our source archive. %{name} expands to 'helloworld' so the resulting
+# tarball name would be 'helloworld.tar.gz'.
+Source0:    %{name}.tar.gz
+
+# Packages that contain only architecture independent files, such as shell
+# scripts or regular Java programs (not JNI libraries), should be marked as 'noarch'
+BuildArch:  noarch
+
+# Since Fedora 37, java packages must contain this line since the i686
+# arhitecture is no longer suported
+ExclusiveArch:  %{java_arches} noarch
+
+# Project's build time dependency. We don't really need JUnit, it just
+# serves as and example
+BuildRequires: junit
+
+%description
+Very short description since we have nothing to say.
+
+%prep
+# section for preparation of sources, applying patches
+# or other things which can be done before running the build
+# The macro setup is used to unpack sources
+%setup -q
+
+%build
+# Section for compiling and generally assembling the final pieces.
+# Our Makefile builds the project JAR file
+make {?_smp_flags}
+
+%install
+# Installation into directory prepared by RPM expressed as %{buildroot}
+install -p -m 644 helloworld.jar %{buildroot}%{_javadir}/helloworld.jar
+
+# We use macro %jpackage_script to generate wrapper script for our JAR
+# Will be explained in later sections
+%jpackage_script org.fedoraproject.helloworld.HelloWorld "" "" %{name} helloworld true
+
+# List of files that this package installs on the system
+%files
+%{_javadir}/helloworld.jar
+%{_bindir}/helloworld
+
+%changelog
+* Tue Mar 19 2013 Stanislav Ochotnicky &lt;sochotnicky@redhat.com&gt; - 1.0-1
+- This is first version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>RPM <code>spec</code> files contain several basic sections:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Header, which contains: </dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Package metadata such as its name, version, release,
+license&#8230;&#8203;</p>
+</li>
+<li>
+<p>A <code>Summary</code> with basic one-line summary of package contents</p>
+</li>
+<li>
+<p>Package source URLs denoted with <code>Source0</code> to <code>SourceN</code> directives</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Source files can then be referenced by <code>%SOURCE0</code> to
+<code>%SOURCEn</code>, which expand to actual paths to given files</p>
+</li>
+<li>
+<p>In practice, the source URL should not point to a file in our
+filesystem, but to an upstream release on the web</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Patches - using <code>Patch0</code> to <code>PatchN</code></p>
+</li>
+<li>
+<p>Project dependencies</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Build dependencies specified by <code>BuildRequires</code>, which need to be
+determined manually.</p>
+</li>
+<li>
+<p>Run time dependencies will be detected automatically. If it fails,
+you have to specify them with <code>Requires</code>.</p>
+</li>
+<li>
+<p>More information on this topic can be found in
+<a href="../dependency_handling/#dependency_handling" class="xref page">Dependency handling</a> section.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Description</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Few sentences about the project and its uses. It will be displayed
+by package management software.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Prep section</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Unpacks the sources using <code>setup -q</code> or manually if needed</p>
+</li>
+<li>
+<p>If a source file does not need to be extracted, it can be copied
+to build directory by <code>cp -p %SOURCE0 .</code></p>
+</li>
+<li>
+<p>Apply patches with <code>%patchX</code>, where X is the number of patch you
+want to apply. (You usually need the patch index, so it would be:
+<code>%patch0 -p1</code>)</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Build section</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Contains project compilation instructions. Usually consists of
+calling the projects build system such as Ant, Maven or Make.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Optional <code>%check</code> section</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Runs projects integration tests. Unit test are usually run in
+<code>%build</code> section, so if there are no integration tests available,
+this section is omitted</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Install section</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Copies built files that are supposed to be installed into
+<code>%{buildroot}</code> directory, which represents target filesystem&#8217;s root</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Files section</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Lists all files, that should be installed from <code>%{buildroot}</code> to
+target system.</p>
+</li>
+<li>
+<p>Documentation files are prefixed by <code>%doc</code> and are
+taken from build directory instead of buildroot</p>
+</li>
+<li>
+<p>Directories that this package should own are prefixed with <code>%dir</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Changelog</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Contains changes to this spec file (not upstream)</p>
+</li>
+<li>
+<p>Has prescribed format. To prevent mistakes in format, it is
+advised to use tool such as <code>rpmdev-bumpspec</code> from package rpmdevtools to
+append new changelog entries instead of editing it by hand</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>To build RPM from <a href="rpm_project/helloworld.spec">this spec file</a> save it in
+your current directory and run <code>rpmbuild</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ rpmbuild -bb helloworld.spec</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If everything worked OK, this should produce RPM file
+<code>~/rpmbuild/RPMS/x86_64/helloworld-1.0-1.fc18.x86_64.rpm</code>. You can use
+<code>rpm -i</code> or <code>dnf install</code> commands to install this package and it
+will add <code>/usr/share/java/helloworld.jar</code> and <code>/usr/bin/helloworld</code>
+wrapper script to your system. Please note that this specfile is
+simplified and lacks some additional parts, such as license
+installation.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Paths and filenames might be slightly different depending on your architecture
+and distribution. Output of the commands will tell you exact paths</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>As you can see to build RPM files you can use <code>rpmbuild</code> command. It has several
+other options, which we will cover later on.</p>
+</div>
+<div class="paragraph">
+<p>Except building binary RPMs (<code>-bb</code>), <code>rpmbuild</code> can also be told to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>build only source RPMs (SRPMs), the packages containing source files
+which can be later build to RPMs (option <code>-bs</code>)</p>
+</li>
+<li>
+<p>build all, both binary and source RPMs (option <code>-ba</code>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>See the manual page of <code>rpmbuild</code> for all available options.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="querying_repositories"><a class="anchor" href="#querying_repositories"></a>Querying repositories</h4>
+<div class="paragraph">
+<p>Fedora comes with several useful tools which can provide great
+assistance in getting information from RPM repositories.</p>
+</div>
+<div class="paragraph">
+<p><code>dnf repoquery</code> is a tool for querying information from RPM repositories.
+Maintainer of Java packages might typically query the repository for
+information like "which package contains Maven artifact
+`groupId:artifactId`".</p>
+</div>
+<div class="listingblock">
+<div class="title">Find out which package provides given artifact</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ dnf repoquery --whatprovides 'mvn(commons-io:commons-io)'
+apache-commons-io-1:2.4-9.fc19.noarch</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The example above shows that one can get to <code>commons-io:commons-io</code>
+artifact by installing <code>apache-commons-io</code> package.</p>
+</div>
+<div class="paragraph">
+<p>By default, <code>dnf repoquery</code> uses all enabled repositories in DNF
+configuration, but it is possible to explicitly specify any other
+repository. For example following command will query only Rawhide
+repository:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ dnf repoquery --available --disablerepo \* --enablerepo rawhide --whatprovides 'mvn(commons-io:commons-io)'
+apache-commons-io-1:2.4-10.fc20.noarch</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Sometimes it may be useful to just list all the artifacts provided by
+given package:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ dnf repoquery --provides apache-commons-io
+apache-commons-io = 1:2.4-9.fc19
+jakarta-commons-io = 1:2.4-9.fc19
+mvn(commons-io:commons-io) = 2.4
+mvn(org.apache.commons:commons-io) = 2.4
+osgi(org.apache.commons.io) = 2.4.0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Output above means that package <code>apache-commons-io</code> provides two Maven
+artifacts: previously mentioned <code>commons-io:commons-io</code> and
+<code>org.apache.commons:commons-io</code>. In this case the second one is just an
+alias for same JAR file. See section about
+<a href="../jar_file_id_aliases/#aliases" class="xref page">artifact aliases</a> for more information
+on this topic.</p>
+</div>
+<div class="paragraph">
+<p>Another useful tool is <code>rpm</code>. It can do a lot of stuff, but most
+importantly it can replace <code>dnf repoquery</code> if one only needs to query local
+RPM database. Only installed packages, or local <code>.rpm</code> files, can be
+queried with this tool.</p>
+</div>
+<div class="paragraph">
+<p>Common use case could be checking which Maven artifacts provide locally
+built packages.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ rpm -qp --provides simplemaven-1.0-2.fc21.noarch.rpm
+mvn(com.example:simplemaven) = 1.0
+mvn(simplemaven:simplemaven) = 1.0
+simplemaven = 1.0-2.fc21</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_quiz_for_java_developers"><a class="anchor" href="#_quiz_for_java_developers"></a>Quiz for Java Developers</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>How would you build a binary RPM if you were given a source RPM?</p>
+</li>
+<li>
+<p>What is most common content of Source0 <code>spec</code> file tag?</p>
+</li>
+<li>
+<p>What is the difference between <code>Version</code> and <code>Release</code> tags?</p>
+</li>
+<li>
+<p>How would you apply a patch in RPM?</p>
+</li>
+<li>
+<p>Where on filesystem should JAR files go?</p>
+</li>
+<li>
+<p>What is the format of RPM changelog or what tool would you use to produce it?</p>
+</li>
+<li>
+<p>How would you install an application that needs certain layout (think
+ANT_HOME) while honoring distribution filesystem layout guidelines?</p>
+</li>
+<li>
+<p>How would you generate script for running a application with main class
+org.project.MainClass which depends on commons-lang jar?</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

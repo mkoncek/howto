@@ -1,0 +1,6 @@
+=== mvn_compat_version
+
+++++++++++++++++++++++++++
+
+include::example$manpages/mvn_compat_version.7.html[]
+++++++++++++++++++++++++++

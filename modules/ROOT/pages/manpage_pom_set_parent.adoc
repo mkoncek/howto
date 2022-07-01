@@ -1,0 +1,6 @@
+=== pom_set_parent
+
+++++++++++++++++++++++++++
+
+include::example$manpages/pom_set_parent.7.html[]
+++++++++++++++++++++++++++

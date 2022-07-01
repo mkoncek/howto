@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled :: Local Preview</title>
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="java-packaging-howto" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Java-Packaging HOWTO</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../introduction/">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_packagers/">For Packagers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_developers/">For Java Developers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora_java_specifics/">Fedora Java Specifics for Users and Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../fedora_java_packaging_specifics/">Fedora Java Specifics for Packagers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../directory_layout/">Directory Layout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jar_file_id/">JAR File Identification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dependency_handling/">Dependency Handling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javadoc_packages/">Javadoc packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core_java_packages/">Core Java packages</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../packaging_best_practices/">Packaging Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../generic_java_build/">Generic Java Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ant/">Ant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../maven/">Maven</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../packaging_maven_project/">Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mvn_macros/">Macros for Maven packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../pom_macros/">Macros for POM modification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../gradle/">Gradle</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../common_errors/">Common Errors</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="./">Migration from older tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../manpages/">Manual pages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_alias/">mvn_alias</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_artifact/">mvn_artifact</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_build/">mvn_build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_compat_version/">mvn_compat_version</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_config/">mvn_config</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_file/">mvn_file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_install/">mvn_install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_package/">mvn_package</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_dep/">pom_add_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_parent/">pom_add_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_plugin/">pom_add_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_change_dep/">pom_change_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_disable_module/">pom_disable_module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_dep/">pom_remove_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_parent/">pom_remove_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_plugin/">pom_remove_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_set_parent/">pom_set_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_disable/">pom_xpath_disable</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_inject/">pom_xpath_inject</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_remove/">pom_xpath_remove</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_replace/">pom_xpath_replace</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_set/">pom_xpath_set</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java-Packaging HOWTO</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java-Packaging HOWTO</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Java-Packaging HOWTO</a></li>
+    <li class="crumb HA"><a href="./">Migration from older tools</a></li>
+  </ul>
+  
+</nav>
+  <div class="edit-this-page"><a href="https://pagure.io/java-packaging-howto/blob/master/f/modules/ROOT/pages/migration.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="_migration_from_older_tools"><a class="anchor" href="#_migration_from_older_tools"></a>Migration from older tools</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section describes how to migrate packages that use older deprecated
+tools to current ones.</p>
+</div>
+<div class="sect2">
+<h3 id="_add_maven_depmap_macro"><a class="anchor" href="#_add_maven_depmap_macro"></a>add_maven_depmap macro</h3>
+<div class="paragraph">
+<p><code>%add_maven_depmap</code> macro was used to manually install Maven artifacts
+that were built with Apache Ant or <code>mvn-rpmbuild</code>. It
+is now deprecated and its invocations should be replaced with
+<code>%mvn_artifact</code> and <code>%mvn_install</code>.</p>
+</div>
+<div class="paragraph">
+<p>Artifact files, Maven POM files and their installation directories no
+longer need to be manually installed, since that is done
+during run of <code>%mvn_install</code>. The installed files also do not need to be
+explicitly enumerated in <code>%files</code> section. Generated file <code>.mfiles</code>
+should be used instead.</p>
+</div>
+<div class="paragraph">
+<p>Relevant parts of specfile using <code>%add_maven_depmap</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">BuildRequires:  javapackages-tools
+
+Requires:       some-library
+...
+
+%build
+ant test
+
+%install
+install -d -m 755 $RPM_BUILD_ROOT%{_javadir}
+install -m 644 target/%{name}.jar $RPM_BUILD_ROOT%{_javadir}/%{name}.jar
+
+install -d -m 755 $RPM_BUILD_ROOT%{_mavenpomdir}
+install -m 644 %{name}.pom $RPM_BUILD_ROOT/%{_mavenpomdir}/JPP-%{name}.pom
+
+# Note that the following call is equivalent to invoking the macro
+# without any parameters
+%add_maven_depmap JPP-%{name}.pom %{name}.jar
+
+# javadoc
+install -d -m 755 $RPM_BUILD_ROOT%{_javadocdir}/%{name}
+cp -pr api/* $RPM_BUILD_ROOT%{_javadocdir}/%{name}
+
+%files
+%{_javadir}/*
+%{_mavenpomdir}/*
+%{_mavendepmapfragdir}/*
+
+%files javadoc
+%doc %{_javadocdir}/%{name}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The same specfile migrated to <code>%mvn_artifact</code> and <code>%mvn_install</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># mvn_* macros are located in javapackages-local package
+BuildRequires:  javapackages-local
+
+# Since XMvn generates requires automatically, it is no longer needed
+# nor recommended to specify manual Requires tags, unless the dependency
+# information in the POM is incomplete or you need to depend on non-java
+# packages
+...
+
+%prep
+# The default location for installing JAR files is %{_javadir}/%{name}/
+# Because our original specfile put the JAR directly to %{_javadir}, we
+# want to override this behavior. The folowing call tells XMvn to
+# install the groupId:artifactId artifact as %{_javadir}/%{name}.jar
+%mvn_file groupId:artifactId %{name}
+
+%build
+ant test
+
+# Tell XMvn which artifact belongs to which POM
+%mvn_artifact %{name}.pom target/%{name}.jar
+
+%install
+# It is not necessary to install directories and artifacts manually,
+# mvn_install will take care of it
+
+# Optionally use -J parameter to specify path to directory with built
+# javadoc
+%mvn_install -J api
+
+# Use autogenerated .mfiles file instead of specifying individual files
+%files -f .mfiles
+%files javadoc -f mfiles-javadoc</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Aliases and subpackages</div>
+<p><code>%add_maven_depmap</code> had <code>-a</code> switch to specify artifact aliases and <code>-f</code>
+switch to support splitting artifacts across multiple subpackages. To
+achieve the same things with <code>%mvn_*</code> macros, see
+<a href="../mvn_macros/#mvn_alias" class="xref page">Additional Mappings</a> and
+<a href="../mvn_macros/#mvn_package" class="xref page">Assignment of the Maven Artifacts to the Subpackages</a>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If project consists of multiple artifacts and parent POMs are among them, call <code>%mvn_artifact</code> on these parent POMs first.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

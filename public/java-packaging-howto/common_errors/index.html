@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled :: Local Preview</title>
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="java-packaging-howto" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Java-Packaging HOWTO</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../introduction/">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_packagers/">For Packagers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_developers/">For Java Developers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora_java_specifics/">Fedora Java Specifics for Users and Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../fedora_java_packaging_specifics/">Fedora Java Specifics for Packagers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../directory_layout/">Directory Layout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jar_file_id/">JAR File Identification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dependency_handling/">Dependency Handling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javadoc_packages/">Javadoc packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core_java_packages/">Core Java packages</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../packaging_best_practices/">Packaging Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../generic_java_build/">Generic Java Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ant/">Ant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../maven/">Maven</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../packaging_maven_project/">Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mvn_macros/">Macros for Maven packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../pom_macros/">Macros for POM modification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../gradle/">Gradle</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="./">Common Errors</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../migration/">Migration from older tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../manpages/">Manual pages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_alias/">mvn_alias</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_artifact/">mvn_artifact</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_build/">mvn_build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_compat_version/">mvn_compat_version</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_config/">mvn_config</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_file/">mvn_file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_install/">mvn_install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_package/">mvn_package</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_dep/">pom_add_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_parent/">pom_add_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_plugin/">pom_add_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_change_dep/">pom_change_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_disable_module/">pom_disable_module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_dep/">pom_remove_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_parent/">pom_remove_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_plugin/">pom_remove_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_set_parent/">pom_set_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_disable/">pom_xpath_disable</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_inject/">pom_xpath_inject</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_remove/">pom_xpath_remove</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_replace/">pom_xpath_replace</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_set/">pom_xpath_set</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java-Packaging HOWTO</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java-Packaging HOWTO</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Java-Packaging HOWTO</a></li>
+    <li class="crumb HA"><a href="./">Common Errors</a></li>
+  </ul>
+  
+</nav>
+  <div class="edit-this-page"><a href="https://pagure.io/java-packaging-howto/blob/master/f/modules/ROOT/pages/common_errors.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="_common_errors"><a class="anchor" href="#_common_errors"></a>Common Errors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section contains explanations and solutions/workarounds for common
+errors which can be encountered during packaging.</p>
+</div>
+<div class="sect2">
+<h3 id="error_missing_dependency"><a class="anchor" href="#error_missing_dependency"></a>Missing dependency</h3>
+<div class="listingblock">
+<div class="content">
+<pre>[ERROR] Failed to execute goal on project simplemaven: Could not resolve
+dependencies for project com.example:simplemaven:jar:1.0: The following
+artifacts could not be resolved: commons-io:commons-io:jar:2.4,
+junit:junit:jar:4.11: Cannot access central
+(http://repo.maven.apache.org/maven2) in offline mode and the artifact
+commons-io:commons-io:jar:2.4 has not been downloaded from it before. -&gt; [Help 1]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Maven was not able to build project <code>com.example:simplemaven</code>, because it
+could not find some dependencies (in this case
+<code>commons-io:commons-io:jar:2.4</code> and <code>junit:junit:jar:4.11</code>)</p>
+</div>
+<div class="paragraph">
+<p>You have multiple options here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If you suspect that a dependency is not necessary, you can
+remove it from <code>pom.xml</code> file and Maven will stop complaining about it.
+You can use wide variety of
+<a href="../pom_macros/#helper_macros" class="xref page">macros</a> for modifying POM files. The one
+for removing dependencies is called
+<a href="../pom_macros/#pom_remove_dep" class="xref page">%pom_remove_dep</a>.</p>
+</li>
+<li>
+<p>There is a mock plugin that can automate installation of missing dependencies.
+When you are using mock, pass additional <code>--enable-plugin pm_request</code> argument
+and the build process would be able to install missing dependencies by itself.
+You still need to add the <code>BuildRequires</code> later, because you need to build
+the package in Koji, where the plugin is not allowed. You should do so using
+<code>xmvn-builddep build.log</code>, where <code>build.log</code> is the path to mock&#8217;s build log.
+It will print a list of <code>BuildRequires</code> lines, which you can directly paste
+into the specfile. To verify that the <code>BuildRequires</code> you just added are
+correct, you can rebuild the package once more without the plugin enabled.</p>
+</li>
+<li>
+<p>Add the artifacts to <code>BuildRequires</code> manually. Maven packages have virtual
+provides in a format <code>mvn(artifact coordinates)</code>, where artifact coordinates
+are in the format which maven used in the error message, but without version
+for non-compat packages (most of the packages you encounter). Virtual
+provides can be used directly in <code>BuildRequires</code>, so in this case, it would be:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>BuildRequires:  mvn(commons-io:commons-io)
+BuildRequires:  mvn(junit:junit)</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="error_compilation_failure"><a class="anchor" href="#error_compilation_failure"></a>Compilation failure</h3>
+<div class="listingblock">
+<div class="content">
+<pre>[ERROR] Failed to execute goal
+org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+on project simplemaven: Compilation failure: Compilation failure:
+[ERROR]
+/builddir/build/BUILD/simplemaven-1.0/src/main/java/com/example/Main.java:[3,29]
+package org.apache.commons.io does not exist
+[ERROR]
+/builddir/build/BUILD/simplemaven-1.0/src/main/java/com/example/Main.java:[8,9]
+cannot find symbol
+[ERROR] symbol:   class FileUtils
+[ERROR] location: class com.example.Main
+[ERROR] -&gt; [Help 1]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Java compiler could not find given class on classpath or incompatible
+version was present. This could be caused by following reasons:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>pom.xml</code> requires different version of Maven artifact than the local
+repository provides</p>
+</li>
+<li>
+<p><code>pom.xml</code> is missing a necessary dependency</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Different versions of same library may provide slightly different API.
+This means that project does not have to be buildable if different
+version is provided.  If the library in local repository is older than
+the one required by project, then the library could be updated. If the
+project requires older version, then the project should be ported to
+latest stable version of the library (this may require cooperation with
+project&#8217;s upstream). If none of these is possible from some reason, it
+is still possible to introduce new <code>compat</code> package. See
+<a href="../jar_file_id_compat/#compat_packages" class="xref page">compat packages</a> section for more
+information on this topic.</p>
+</div>
+<div class="paragraph">
+<p>Sometimes <code>pom.xml</code> does not list all the necessary dependencies, even if
+it should. Dependencies can also depend on some other and typically all
+these will be available to the project which is being built. The problem
+is that local repository may contain different versions of these
+dependencies. And even if these versions are fully compatible with the
+project, they may require slightly different set of dependencies. This
+could lead to build failure if <code>pom.xml</code> does not specify all necessary
+dependencies and relies on transitive dependencies. Such a missing
+dependency may be considered a bug in the project. The solution is to
+explicitly add missing dependency to the <code>pom.xml</code>. This may be easily
+done by using <code>%pom_add_dep</code> macro. See section about
+<a href="../pom_macros/#helper_macros" class="xref page">macros for POM modification</a> for more information.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="error_requires_unknown"><a class="anchor" href="#error_requires_unknown"></a>Requires cannot be generated</h3>
+<div class="listingblock">
+<div class="content">
+<pre>Following dependencies were not resolved and requires cannot be generated.
+Either remove the dependency from pom.xml or add proper packages to
+BuildRequires: org.apache.maven.doxia:doxia-core::tests:UNKNOWN</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Most often this error happens when one part of the package depends on an
+attached artifact which is not being installed. Automatic RPM requires generator
+then tries to generate requires on artifact which is not being installed. This
+would most likely result in a broken RPM package so generator halts the build.</p>
+</div>
+<div class="paragraph">
+<p>There are usually two possible solutions for this problem:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install attached artifact in question. For the above error following macro
+would install artifacts with <code>tests</code> classifiers into <code>tests</code> subpackage.</p>
+<div class="literalblock">
+<div class="content">
+<pre>%mvn_package :::tests: %{name}-tests</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Remove dependency on problematic artifact. This can involve <code>pom.xml</code>
+modifications, disabling tests or even code changes so it is usually easier
+to install the dependency.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="error_scope_system"><a class="anchor" href="#error_scope_system"></a>Dependencies with scope "system"</h3>
+<div class="listingblock">
+<div class="content">
+<pre>[ERROR] Failed to execute goal
+org.fedoraproject.xmvn:xmvn-mojo:1.2.0:install (default-cli) on project
+pom: Some reactor artifacts have dependencies with scope "system". Such
+dependencies are not supported by XMvn installer. You should either
+remove any dependencies with scope "system" before the build or not run
+XMvn instaler. -&gt; [Help 1]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Some Maven artifacts try to depend on exact system paths. Most usually this
+dependency is either on <code>com.sun:tools</code> or <code>sun.jdk:jconsole</code>. Dependencies with
+system scope cause issues with our tooling and requires generators so they are
+not supported.</p>
+</div>
+<div class="paragraph">
+<p>Easiest way to solve this for above two dependencies is by removing and adding
+back the dependency without <code>&lt;scope&gt;</code> or <code>&lt;systemPath&gt;</code> nodes:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>%pom_remove_dep com.sun:tools
+%pom_add_dep com.sun:tools</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

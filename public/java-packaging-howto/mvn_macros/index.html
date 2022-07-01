@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled :: Local Preview</title>
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="java-packaging-howto" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Java-Packaging HOWTO</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../introduction/">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_packagers/">For Packagers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_developers/">For Java Developers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora_java_specifics/">Fedora Java Specifics for Users and Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../fedora_java_packaging_specifics/">Fedora Java Specifics for Packagers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../directory_layout/">Directory Layout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jar_file_id/">JAR File Identification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dependency_handling/">Dependency Handling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javadoc_packages/">Javadoc packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core_java_packages/">Core Java packages</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../packaging_best_practices/">Packaging Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../generic_java_build/">Generic Java Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ant/">Ant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../maven/">Maven</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../packaging_maven_project/">Packaging</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="./">Macros for Maven packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../pom_macros/">Macros for POM modification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../gradle/">Gradle</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../common_errors/">Common Errors</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../migration/">Migration from older tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../manpages/">Manual pages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_alias/">mvn_alias</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_artifact/">mvn_artifact</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_build/">mvn_build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_compat_version/">mvn_compat_version</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_config/">mvn_config</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_file/">mvn_file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_install/">mvn_install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_package/">mvn_package</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_dep/">pom_add_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_parent/">pom_add_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_plugin/">pom_add_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_change_dep/">pom_change_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_disable_module/">pom_disable_module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_dep/">pom_remove_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_parent/">pom_remove_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_plugin/">pom_remove_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_set_parent/">pom_set_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_disable/">pom_xpath_disable</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_inject/">pom_xpath_inject</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_remove/">pom_xpath_remove</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_replace/">pom_xpath_replace</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_set/">pom_xpath_set</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java-Packaging HOWTO</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java-Packaging HOWTO</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Java-Packaging HOWTO</a></li>
+    <li class="crumb HA"><a href="../maven/">Maven</a></li>
+    <li class="crumb HA"><a href="./">Macros for Maven packaging</a></li>
+  </ul>
+  
+</nav>
+  <div class="edit-this-page"><a href="https://pagure.io/java-packaging-howto/blob/master/f/modules/ROOT/pages/mvn_macros.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect2">
+<h3 id="mvn_macros"><a class="anchor" href="#mvn_macros"></a>Macros for Maven build configuration</h3>
+<div class="paragraph">
+<p>Maven builds can be configured to produce alternative layout, include additional
+aliases in package metadata or create separate subpackages for certain
+artifacts.</p>
+</div>
+<div class="sect3">
+<h4 id="mvn_artifact"><a class="anchor" href="#mvn_artifact"></a>Installing additional artifacts</h4>
+<div class="paragraph">
+<p>It is possible to explicitly request an installation of any Maven artifact
+(JAR/POM file).  Macro <code>%mvn_install</code> only knows about Maven artifacts that were
+created during execution of <code>%mvn_build</code>. Normally, any other artifacts which
+were built by some other method would need to be installed manually.
+<code>%mvn_build</code> macro does not even need to be used at all. Luckily, all artifacts
+created outside of <code>%mvn_build</code> can be marked for installation with
+<code>%mvn_artifact</code> macro. This macro creates configuration for <code>%mvn_install</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Requesting installation of Maven artifact</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">%prep
+...
+# Request installation of POM and JAR file
+%mvn_artifact subpackage/pom.xml target/artifact.jar
+# Request installation of POM artifact (no JAR file)
+%mvn_artifact pom.xml
+# Request installation for JAR file specified by artifact coordinates
+%mvn_artifact webapp:webapp:war:3.1 webapp.war</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="mvn_alias"><a class="anchor" href="#mvn_alias"></a>Additional Mappings</h4>
+<div class="paragraph">
+<p>The macro <code>%mvn_alias</code> can be used to add additional mappings for given POM/JAR
+file. For example, if the POM file indicates that it contains groupId
+commons-lang, artifactId commons-lang, this macro ensures that we also add a
+mapping between groupId org.apache.commons and the installed JAR/POM files. This
+is necessary in cases where the groupId or artifactId may have changed, and
+other packages might require different IDs than those reflected in the installed
+POM.</p>
+</div>
+<div class="listingblock">
+<div class="title">Adding more mappings for JAR/POM files example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">%prep
+...
+%mvn_alias "commons-lang:commons-lang" "org.apache.commons:commons-lang"</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="mvn_file"><a class="anchor" href="#mvn_file"></a>Alternative JAR File Names</h4>
+<div class="paragraph">
+<p>In some cases, it may be important to be able to provide symbolic links to
+actual JAR files. This can be achieved with <code>%mvn_file</code> macro. This macro allows
+packager to specify names of the JAR files, their location in <code>%{_javadir}</code>
+directory and also can create symbolic links to the JAR files. These links can
+be possibly located outside of the <code>%{_javadir}</code> directory.</p>
+</div>
+<div class="listingblock">
+<div class="title">Adding file symlinks to compatibility</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">%prep
+...
+%mvn_file :guice google/guice guice</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This means that JAR file for artifact with ID "guice" (and any groupId) will be
+installed in <code>%{_javadir}/google/guice.jar</code> and there also will be a symbolic
+links to this JAR file located in <code>%{_javadir}/guice.jar</code>. Note the macro will
+add ".jar" extensions automatically.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="mvn_singleton"><a class="anchor" href="#mvn_singleton"></a>Single Artifact Per Package</h4>
+<div class="paragraph">
+<p>If the project consists of multiple artifacts, it is recommended to install each
+artifact to the separate subpackage. The macro <code>%mvn_build -s</code> will generate
+separate <code>.mfiles</code> file for every artifact in the project. This file contains
+list of files related to specific artifact (typically JAR file, POM file and
+metadata). It can be later used in <code>%files</code> section of the spec file.</p>
+</div>
+<div class="listingblock">
+<div class="title">Creating one subpackage for each generated artifact</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">...
+%description
+The Maven Plugin Tools contains...
+
+%package -n maven-plugin-annotations
+Summary:        Maven Plugin Java 5 Annotations
+
+%description -n maven-plugin-annotations
+This package contains Java 5 annotations to use in Mojos.
+
+%package -n maven-plugin-plugin
+Summary:        Maven Plugin Plugin
+
+%description -n maven-plugin-plugin
+The Plugin Plugin is used to...
+...
+
+%build
+%mvn_build -s
+
+%install
+%mvn_install
+
+%files -f .mfiles-maven-plugin-tools
+%doc LICENSE NOTICE
+%files -n maven-plugin-annotations -f .mfiles-maven-plugin-annotations
+%files -n maven-plugin-plugin      -f .mfiles-maven-plugin-plugin
+%files -f .mfiles-javadoc
+...</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="mvn_package"><a class="anchor" href="#mvn_package"></a>Assignment of the Maven Artifacts to the Subpackages</h4>
+<div class="paragraph">
+<p>The macro <code>%mvn_package</code> allows maintainer to specify in which exact package the
+selected artifact will end up. It is something between singleton packaging, when
+each artifact has its own subpackage and default packaging, when all artifacts
+end up in the same package.</p>
+</div>
+<div class="listingblock">
+<div class="title">Assigning multiple artifacts to single subpackage</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">...
+%prep
+%mvn_package ":plexus-compiler-jikes"   plexus-compiler-extras
+%mvn_package ":plexus-compiler-eclipse" plexus-compiler-extras
+%mvn_package ":plexus-compiler-csharp"  plexus-compiler-extras
+
+%build
+%mvn_build
+
+%install
+%mvn_install
+
+%files -f .mfiles
+%files -f .mfiles-plexus-compiler-extras
+%files -f .mfiles-javadoc</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In above example, the artifacts <code>plexus-compiler-jikes</code>,
+<code>plexus-compiler-eclipse</code>, <code>plexus-compiler-csharp</code> will end up in package named
+<code>plexus-compiler-extras</code>. If there are some other artifacts beside these three
+mentioned (e.g. some parent POMs), then these will all end up in package named
+<code>%{name}</code>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><code>%mvn_package</code> macro supports wildcards and brace expansions, so whole <code>%prep</code>
+section from previous example can be replaced with single line:
+<code>%mvn_package ":plexus-compiler-{jikes,eclipse,csharp}" plexus-compiler-extras</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>It is possible to assign artifacts into a package called <code>__noinstall</code>. This
+package name has a special meaning. And as you can guess, artifacts assigned
+into this package will not be installed anywhere and the package itself will not
+be created.</p>
+</div>
+<div class="listingblock">
+<div class="title">Skipping installation of an artifact</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">%prep
+...
+%mvn_package groupId:artifactId __noinstall</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="mvn_config"><a class="anchor" href="#mvn_config"></a>Modifying XMvn configuration from within spec file</h4>
+<div class="paragraph">
+<p>Some packages might need to modify XMvn&#8217;s configuration in order to build
+successfully or from other reasons. This can be achieved with <code>mvn_config</code>
+macro. For example, some old package can use <code>enum</code> as an identifier, but it is
+also keyword since Java 1.5. Such package will probably fail to build on current
+systems. This problem can be easily solved by passing <code>-source 1.4</code> to the
+compiler, so one could add following line to the spec file:</p>
+</div>
+<div class="listingblock">
+<div class="title">Overriding default XMvn configuration</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">%prep
+...
+%mvn_config buildSettings/compilerSource 1.4</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>XMvn&#8217;s configuration is quite complex, but well documented at project&#8217;s
+<a href="https://mizdebsk.fedorapeople.org/xmvn/site/">official website</a>. The website
+should always be used as a primary source of information about XMvn
+configuration.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Read about XMvn&#8217;s configuration
+<a href="https://mizdebsk.fedorapeople.org/xmvn/site/configuration.html">basics</a> and see
+full
+<a href="https://mizdebsk.fedorapeople.org/xmvn/site/config.html">configuration reference</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>All <code>%mvn_*</code> macros have their own manual page which contains details on how to
+use them. All possible options are documented there. These manual pages should
+be considered the most up to date documentation right after source code. Try
+for example <code>man mvn_file</code>. These pages are also included in the
+<a href="../manpages/#manpages" class="xref page">Appendix</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

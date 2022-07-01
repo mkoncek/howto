@@ -1,0 +1,6 @@
+=== mvn_config
+
+++++++++++++++++++++++++++
+
+include::example$manpages/mvn_config.7.html[]
+++++++++++++++++++++++++++

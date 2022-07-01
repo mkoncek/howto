@@ -1,0 +1,6 @@
+=== pom_remove_dep
+
+++++++++++++++++++++++++++
+
+include::example$manpages/pom_remove_dep.7.html[]
+++++++++++++++++++++++++++

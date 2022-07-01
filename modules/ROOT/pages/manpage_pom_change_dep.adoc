@@ -1,0 +1,6 @@
+=== pom_change_dep
+
+++++++++++++++++++++++++++
+
+include::example$manpages/pom_change_dep.7.html[]
+++++++++++++++++++++++++++

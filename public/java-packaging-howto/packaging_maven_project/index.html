@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled :: Local Preview</title>
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="java-packaging-howto" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Java-Packaging HOWTO</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../introduction/">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_packagers/">For Packagers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_developers/">For Java Developers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora_java_specifics/">Fedora Java Specifics for Users and Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../fedora_java_packaging_specifics/">Fedora Java Specifics for Packagers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../directory_layout/">Directory Layout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jar_file_id/">JAR File Identification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dependency_handling/">Dependency Handling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javadoc_packages/">Javadoc packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core_java_packages/">Core Java packages</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../packaging_best_practices/">Packaging Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../generic_java_build/">Generic Java Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ant/">Ant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../maven/">Maven</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="./">Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mvn_macros/">Macros for Maven packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../pom_macros/">Macros for POM modification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../gradle/">Gradle</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../common_errors/">Common Errors</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../migration/">Migration from older tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../manpages/">Manual pages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_alias/">mvn_alias</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_artifact/">mvn_artifact</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_build/">mvn_build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_compat_version/">mvn_compat_version</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_config/">mvn_config</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_file/">mvn_file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_install/">mvn_install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_package/">mvn_package</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_dep/">pom_add_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_parent/">pom_add_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_plugin/">pom_add_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_change_dep/">pom_change_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_disable_module/">pom_disable_module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_dep/">pom_remove_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_parent/">pom_remove_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_plugin/">pom_remove_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_set_parent/">pom_set_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_disable/">pom_xpath_disable</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_inject/">pom_xpath_inject</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_remove/">pom_xpath_remove</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_replace/">pom_xpath_replace</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_set/">pom_xpath_set</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java-Packaging HOWTO</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java-Packaging HOWTO</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Java-Packaging HOWTO</a></li>
+    <li class="crumb HA"><a href="../maven/">Maven</a></li>
+    <li class="crumb HA"><a href="./">Packaging</a></li>
+  </ul>
+  
+</nav>
+  <div class="edit-this-page"><a href="https://pagure.io/java-packaging-howto/blob/master/f/modules/ROOT/pages/packaging_maven_project.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect2">
+<h3 id="packaging_maven_project"><a class="anchor" href="#packaging_maven_project"></a>Packaging Maven project</h3>
+<div class="paragraph">
+<p>This step-by-step guide will show how to package Maven project. Let&#8217;s start with
+probably simplest spec file possible.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">Name:           simplemaven
+Version:        1.0
+Release:        1%{?dist}
+Summary:        Simple Maven project
+License:        BSD
+URL:            http://www.example.com
+Source0:        http://www.example.com/simplemaven-1.0.tar.gz
+BuildArch:      noarch
+ExclusiveArch:  %{java_arches} noarch
+
+BuildRequires:  maven-local
+
+%description
+This is simple Maven project.
+
+%package        javadoc
+Summary:        Javadoc for %{name}
+
+%description javadoc
+This package contains the API documentation for %{name}.
+
+%prep
+%setup -q
+
+%build
+%mvn_build
+
+%install
+%mvn_install
+
+%files -f .mfiles
+%files javadoc -f .mfiles-javadoc
+
+%changelog
+* Mon Oct 14 2013 Michal Srb &lt;msrb@redhat.com&gt; - 1.0-1
+- Initial packaging</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The spec file above is a real-world example of how a simple Maven project may
+look like. Both <code>%build</code> and <code>%install</code> sections consist only of one line.</p>
+</div>
+<div class="paragraph">
+<p>Other interesting lines:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">10: BuildRequires:  maven-local</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All Maven projects need to have BuildRequires on <code>maven-local</code>. They also need
+to have Requires and BuildRequires on <code>jpackages-utils</code>, but build system adds
+these automatically. Package maintainer does not need to list them explicitly.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">31: %dir %{_javadir}/%{name}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By default, resulting JAR files will be installed in <code>%{_javadir}/%{name}</code>,
+therefore, package needs to own this directory.</p>
+</div>
+<div class="paragraph">
+<p>The build could fail from many reasons, but one probably most common is
+build failure due to
+<a href="../common_errors/#error_missing_dependency" class="xref page">missing dependencies</a></p>
+</div>
+<div class="paragraph">
+<p>We can try to remove these missing dependencies from <code>pom.xml</code> and make Maven
+stop complaining about them. However, these removed dependencies may be crucial
+for building of the project and therefore it may be needed to package them
+later.  Let&#8217;s remove the dependencies from <code>pom.xml</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Remove dependencies from pom.xml</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">...
+%prep
+%setup -q
+
+# Add following lines to %prep section of a spec file
+%pom_remove_dep :commons-io
+%pom_remove_dep :junit</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Package maintainer can use a wide variety of <code>pom_*</code> macros for modifying
+<code>pom.xml</code> files. See
+<a href="../pom_macros/#helper_macros" class="xref page">Macros for POM modification</a>
+section for more information.</p>
+</div>
+<div class="paragraph">
+<p>Now try to build the project again. The build will fail with
+<a href="../common_errors/#error_compilation_failure" class="xref page">compilation failure</a>.</p>
+</div>
+<div class="paragraph">
+<p>Oops, another problem. This time Maven thought it had all the necessary
+dependencies, but Java compiler thinks otherwise.</p>
+</div>
+<div class="paragraph">
+<p>Now it is possible to either patch the source code not to depend on missing
+libraries or to package them. Second approach is usually correct. It is not
+necessary to package every dependency right away. Maintainer could package
+compile time dependencies first and keep the rest for later (test
+dependencies, &#8230;&#8203;). But Maven needs to know that it should not try to run tests
+now. This can be achieved by passing <code>-f</code> option to <code>%mvn_build</code> macro. Maven
+will stop complaining about missing test scoped dependencies from now on.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Another reason to disable the test phase is to speed up the local build
+process. This can also be achieved by specifying an additional switch,
+<code>--without=tests</code>, to the <code>fedpkg</code> or the <code>mock</code> tool instead of adding a switch
+to <code>%mvn_build</code>.</p>
+</div>
+<div class="paragraph">
+<p>Another switch, <code>--without=javadoc</code>, causes the build to skip Javadoc generation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is always recommended to run all available test suites during build. It
+greatly improves quality of the package.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>We already have package which provides <code>commons-io:commons-io</code> artifact, let&#8217;s
+add it to the <code>BuildRequires</code>. Also disable tests for now.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">BuildRequires:  maven-local
+BuildRequires:  apache-commons-io
+...
+%prep
+%setup -q
+
+# Comment out following lines in %prep section
+#%%pom_remove_dep :commons-io
+#%%pom_remove_dep :junit
+
+%build
+# Skip tests for now, missing dependency junit:junit:4.11
+%mvn_build -f</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>One can easily search for package which provides desired artifact. Try
+<code>dnf repoquery --whatprovides 'mvn(commons-io:commons-io)'</code>, or see how to
+<a href="../introduction_for_developers/#querying_repositories" class="xref page">query repositories</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Now try to build the project one more time. The build should succeed now.
+Congrats, you managed to create an RPM from Maven project!</p>
+</div>
+<div class="paragraph">
+<p>There is plenty of other things maintainer may want to do. For example, he may
+want to provide symbolic links to the JAR file in <code>%{_javadir}</code>.</p>
+</div>
+<div class="paragraph">
+<p>This can be easily achieved with <code>%mvn_file</code> macro:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">%prep
+%setup -q
+
+%mvn_file : %{name}/%{name} %{name}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="../mvn_macros/#mvn_file" class="xref page">Alternative JAR File Names</a> section for more
+information.</p>
+</div>
+<div class="paragraph">
+<p>Another quite common thing to do is adding aliases to Maven artifact. Try
+running <code>rpm -qp --provides</code> on your locally built RPM package:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ rpm -qp --provides simplemaven-1.0-1.fc21.noarch.rpm
+mvn(com.example:simplemaven) = 1.0
+simplemaven = 1.0-1.fc21</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The output above tells us that the RPM package provides Maven artifact
+<code>com.example:simplemaven:1.0</code>. Upstream may change the groupId:artifactId with
+any new release. And it happens. For example <code>org.apache.commons:commons-io</code>
+changed to <code>commons-io:commons-io</code> some time ago. It is not a big deal for
+package itself, but it is a huge problem for other packages that depends on that
+particular package. Some packages may still have dependencies on old
+groupId:artifactId, which is suddenly unavailable. Luckily, there is an easy way
+to solve such problems. Package maintainer can add aliases to actually provided
+Maven artifact.</p>
+</div>
+<div class="listingblock">
+<div class="title">Add alias to Maven artifact</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">%mvn_alias org.example:simplemaven simplemaven:simplemaven</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="../mvn_macros/#mvn_alias" class="xref page">Additional Mappings</a> for more information on
+<code>%mvn_alias</code>.</p>
+</div>
+<div class="paragraph">
+<p>Rebuild the package and check <code>rpm -qp --provides</code> output again:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ rpm -qp --provides simplemaven-1.0-2.fc21.noarch.rpm
+mvn(com.example:simplemaven) = 1.0
+mvn(simplemaven:simplemaven) = 1.0
+simplemaven = 1.0-2.fc21</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now it does not matter if some other package depends on either of these listed
+artifacts. Both dependencies will always be satisfied with your package.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+One could try to fix dependencies in all the dependent packages instead
+of adding an alias to single package. It is almost always the wrong thing to do.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

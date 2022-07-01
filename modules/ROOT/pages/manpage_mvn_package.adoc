@@ -1,0 +1,6 @@
+=== mvn_package
+
+++++++++++++++++++++++++++
+
+include::example$manpages/mvn_package.7.html[]
+++++++++++++++++++++++++++

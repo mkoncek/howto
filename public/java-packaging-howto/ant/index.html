@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled :: Local Preview</title>
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="java-packaging-howto" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Java-Packaging HOWTO</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../introduction/">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_packagers/">For Packagers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_developers/">For Java Developers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora_java_specifics/">Fedora Java Specifics for Users and Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../fedora_java_packaging_specifics/">Fedora Java Specifics for Packagers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../directory_layout/">Directory Layout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jar_file_id/">JAR File Identification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dependency_handling/">Dependency Handling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javadoc_packages/">Javadoc packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core_java_packages/">Core Java packages</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../packaging_best_practices/">Packaging Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../generic_java_build/">Generic Java Builds</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="./">Ant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../maven/">Maven</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../packaging_maven_project/">Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mvn_macros/">Macros for Maven packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../pom_macros/">Macros for POM modification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../gradle/">Gradle</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../common_errors/">Common Errors</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../migration/">Migration from older tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../manpages/">Manual pages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_alias/">mvn_alias</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_artifact/">mvn_artifact</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_build/">mvn_build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_compat_version/">mvn_compat_version</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_config/">mvn_config</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_file/">mvn_file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_install/">mvn_install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_package/">mvn_package</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_dep/">pom_add_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_parent/">pom_add_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_plugin/">pom_add_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_change_dep/">pom_change_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_disable_module/">pom_disable_module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_dep/">pom_remove_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_parent/">pom_remove_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_plugin/">pom_remove_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_set_parent/">pom_set_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_disable/">pom_xpath_disable</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_inject/">pom_xpath_inject</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_remove/">pom_xpath_remove</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_replace/">pom_xpath_replace</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_set/">pom_xpath_set</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java-Packaging HOWTO</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java-Packaging HOWTO</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Java-Packaging HOWTO</a></li>
+    <li class="crumb HA"><a href="./">Ant</a></li>
+  </ul>
+  
+</nav>
+  <div class="edit-this-page"><a href="https://pagure.io/java-packaging-howto/blob/master/f/modules/ROOT/pages/ant.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="ant"><a class="anchor" href="#ant"></a>Ant</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Apache Ant is a Java library and command-line tool whose mission is to drive
+processes described in build files as targets and extension points dependent
+upon each other.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; https://ant.apache.org
+</div>
+</div>
+<div class="paragraph">
+<p>Apache Ant is one of the most popular Java build tools after Apache Maven.
+The main difference between these two tools is that Ant is procedural and Maven
+is declarative. When using Ant, it is neccessary to exactly describe the
+processes which lead to the result. It means that one needs to specify where the
+source files are, what needs to be done and when it needs to be done. On the
+other hand, Maven relies on conventions and does not require specifying most
+of the process unless you need to override the defaults.</p>
+</div>
+<div class="paragraph">
+<p>If upstream ships a Maven POM file, it must be installed even if you
+do not build with Maven. If not, you should try to search Maven Central
+Repository for it, ship it as another source and install it.</p>
+</div>
+<div class="listingblock">
+<div class="title">Common spec file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">BuildRequires: ant
+BuildRequires: javapackages-local
+...
+%build
+ant test
+
+%install
+%mvn_artifact pom.xml lib/%{name}.jar
+
+%mvn_install -J api/
+
+%files -f .mfiles
+%dir %{_javadir}/%{name}
+
+%files javadoc -f .mfiles-javadoc</code></pre>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Details:</div>
+<ul>
+<li>
+<p><code>%build</code> section uses <code>ant</code> command to build the project and run the
+tests. The used target(s) may vary depending on the <code>build.xml</code>
+file. You can use <code>ant -p</code> command to list the project info or
+manually look for <code>&lt;target&gt;</code> nodes in the <code>build.xml</code> file</p>
+</li>
+<li>
+<p><code>%mvn_artifact</code> macro is used to request installation of an
+artifact that was not built using Maven. It expects a POM file and
+a JAR file. For POM only artifacts, the JAR part is omitted.<br>
+See <a href="../mvn_macros/#mvn_artifact" class="xref page">Installing additional artifacts</a>
+for more information</p>
+</li>
+<li>
+<p><code>%mvn_install</code> performs the actual installation. Optional <code>-J</code>
+parameter requests installation of generated Javadoc from given
+directory</p>
+</li>
+<li>
+<p>This method of artifact installation allows using other XMvn
+macros such as <code>%mvn_alias</code> or <code>%mvn_package</code></p>
+</li>
+<li>
+<p><code>%mvn_install</code> generates <code>.mfiles</code> file which should be used to
+populate <code>%files</code> section with <code>-f</code> switch. For each subpackage
+there would be separate generated file named
+<code>.mfiles-&lt;subpackage-name&gt;</code></p>
+</li>
+<li>
+<p>All packages are required to own directories which they create
+(and which are not owned by other packages). JAR files are by
+default installed into subdirectory of <code>%{_javadir}</code>. To override
+this behavior, use <code>%mvn_file</code></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_apache_ivy"><a class="anchor" href="#_apache_ivy"></a>Apache Ivy</h3>
+<div class="paragraph">
+<p>Apache Ivy provides an automatic dependency management for Ant managed
+builds. It uses Maven repositories for retrieving artifacts and supports
+many declarative features of Maven such as handling transitive
+dependencies.</p>
+</div>
+<div class="paragraph">
+<p>XMvn supports local resolution of Ivy artifacts, their installation
+and requires generation.</p>
+</div>
+<div class="listingblock">
+<div class="title">Spec file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">BuildRequires: ivy-local
+...
+%build
+ant -Divy.mode=local test
+
+%install
+%mvn_artifact ivy.xml lib/sample.jar
+
+%mvn_install -J api/
+
+%files -f .mfiles
+%files -javadoc -f .mfiles-javadoc</code></pre>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Details:</div>
+<ul>
+<li>
+<p><code>-Divy.mode=local</code> tells Ivy to use XMvn local artifact
+resolution instead of downloading from the Internet</p>
+</li>
+<li>
+<p>If there is an <code>ivy-settings.xml</code> or similar file, which specifies
+remote repositories, it needs to be disabled, otherwise it would
+override local resolution.</p>
+</li>
+<li>
+<p><code>%mvn_artifact</code> supports installing artifacts described by Ivy
+configuration files</p>
+</li>
+<li>
+<p><code>%mvn_install</code> performs the actual installation. Optional <code>-J</code>
+parameter requests installation of generated Javadoc from given
+directory</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_ivy_files_manipulation"><a class="anchor" href="#_ivy_files_manipulation"></a>Ivy files manipulation</h5>
+<div class="paragraph">
+<p>A subset of macros used to modify Maven POMs also work with <code>ivy.xml</code>
+files allowing the maintainer to add/remove/change dependencies without
+the need of making patches and rebasing them with each change.
+You can use dependency handling macros <code>%pom_add_dep</code>,
+<code>%pom_remove_dep</code>, <code>%pom_change_dep</code> and generic <code>%pom_xpath_*</code> macros.
+For more details, see corresponding manpages.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Remove dependency on artifact with org="com.example" and
+# name="java-project" from ivy.xml file in current directory
+%pom_remove_dep com.example:java-project
+
+# Add dependency on artifact with org="com.example" and
+# name="foobar" to ./submodule/ivy.xml
+%pom_add_dep com.example:foobar submodule</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_using_the_ivypublish_task"><a class="anchor" href="#_using_the_ivypublish_task"></a>Using the <code>ivy:publish</code> task</h5>
+<div class="paragraph">
+<p>Ivy supports publishing built artifact with <code>ivy:publish</code> task. If your
+<code>build.xml</code> file already contains a task that calls <code>ivy:publish</code>, you
+can set the resolver attribute of the <code>ivy:publish</code> element to <code>xmvn</code>.
+This can be done with simple <code>%pom_xpath_set</code> call.  Then when the task
+is run, XMvn can pick the published artifacts and install them during
+the run of <code>%mvn_install</code> without needing you to manually specify them
+with
+<code>%mvn_artifact</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Spec file using the <code>ivy:publish</code> task</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec">BuildRequires: ivy-local
+....
+%prep
+%pom_xpath_set ivy:publish/@resolver xmvn build.xml
+
+%build
+ant -Divy.mode=local test publish-local
+
+%install
+%mvn_install -J api/
+
+%files -f .mfiles
+%files -javadoc -f .mfiles-javadoc</code></pre>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Details:</div>
+<ul>
+<li>
+<p>The publish target may be named differently. Search the <code>build.xml</code>
+for occurences of <code>ivy:publish</code>.</p>
+</li>
+<li>
+<p><code>%mvn_install</code> will install all the published artifacts.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

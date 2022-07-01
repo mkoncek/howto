@@ -1,0 +1,6 @@
+=== mvn_alias
+
+++++++++++++++++++++++++++
+
+include::example$manpages/mvn_alias.7.html[]
+++++++++++++++++++++++++++

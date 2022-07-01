@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled :: Local Preview</title>
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="java-packaging-howto" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Java-Packaging HOWTO</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../introduction/">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_packagers/">For Packagers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_developers/">For Java Developers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="./">Fedora Java Specifics for Users and Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../fedora_java_packaging_specifics/">Fedora Java Specifics for Packagers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../directory_layout/">Directory Layout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jar_file_id/">JAR File Identification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dependency_handling/">Dependency Handling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javadoc_packages/">Javadoc packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core_java_packages/">Core Java packages</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../packaging_best_practices/">Packaging Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../generic_java_build/">Generic Java Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ant/">Ant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../maven/">Maven</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../packaging_maven_project/">Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mvn_macros/">Macros for Maven packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../pom_macros/">Macros for POM modification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../gradle/">Gradle</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../common_errors/">Common Errors</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../migration/">Migration from older tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../manpages/">Manual pages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_alias/">mvn_alias</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_artifact/">mvn_artifact</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_build/">mvn_build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_compat_version/">mvn_compat_version</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_config/">mvn_config</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_file/">mvn_file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_install/">mvn_install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_package/">mvn_package</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_dep/">pom_add_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_parent/">pom_add_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_plugin/">pom_add_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_change_dep/">pom_change_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_disable_module/">pom_disable_module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_dep/">pom_remove_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_parent/">pom_remove_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_plugin/">pom_remove_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_set_parent/">pom_set_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_disable/">pom_xpath_disable</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_inject/">pom_xpath_inject</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_remove/">pom_xpath_remove</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_replace/">pom_xpath_replace</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_set/">pom_xpath_set</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java-Packaging HOWTO</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java-Packaging HOWTO</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Java-Packaging HOWTO</a></li>
+    <li class="crumb HA"><a href="./">Fedora Java Specifics for Users and Developers</a></li>
+  </ul>
+  
+</nav>
+  <div class="edit-this-page"><a href="https://pagure.io/java-packaging-howto/blob/master/f/modules/ROOT/pages/fedora_java_specifics.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="_java_specifics_in_fedora_for_users_and_developers"><a class="anchor" href="#_java_specifics_in_fedora_for_users_and_developers"></a>Java Specifics in Fedora for Users and Developers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section contains information about default Java implementation in
+Fedora, switching between different Java runtime environments and about
+few useful tools which can be used during packaging/development.</p>
+</div>
+<div class="sect2">
+<h3 id="openjdk"><a class="anchor" href="#openjdk"></a>Java implementation in Fedora</h3>
+<div class="paragraph">
+<p>Fedora ships with an open-source reference implementation of Java
+Standard Edition called <a href="http://openjdk.java.net/">OpenJDK</a>. OpenJDK
+provides Java Runtime Environment for Java applications and set of
+development tools for Java developers.</p>
+</div>
+<div class="paragraph">
+<p>From users point of view, <code>java</code> command is probably most interesting.
+It is a Java application launcher which spawns Java Virtual Machine
+(JVM), loads specified <code>.class</code> file and executes its main method.</p>
+</div>
+<div class="paragraph">
+<p>Here is an example how to run sample <a href="../introduction_for_packagers/#_example_java_project" class="xref page">Java project</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ java org/fedoraproject/helloworld/HelloWorld.class</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>OpenJDK provides a lot of interesting tools for Java developers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>javac</code> is a Java compiler which translates source files
+to Java bytecode, which can be later interpreted by JVM.</p>
+</li>
+<li>
+<p><code>jdb</code> is a simple command-line debugger for Java applications.</p>
+</li>
+<li>
+<p><code>javadoc</code> is a tool for generating Javadoc documentation.</p>
+</li>
+<li>
+<p><code>javap</code> can be used for disassembling Java class files.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_switching_between_different_java_implementations"><a class="anchor" href="#_switching_between_different_java_implementations"></a>Switching between different Java implementations</h4>
+<div class="paragraph">
+<p>Users and developers may want to have multiple Java environments
+installed at the same time. It is possible in Fedora, but only one of
+them can be default Java environment in system. Fedora uses
+<code>alternatives</code> for switching between different installed JREs/JDKs.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre># alternatives --config java
+
+There are 3 programs which provide 'java'.
+
+  Selection    Command
+  -----------------------------------------------
+   1           java-17-openjdk.x86_64 (/usr/lib/jvm/java-17-openjdk-17.0.2.0.8-1.fc35.x86_64/bin/java)
+*+ 2           java-11-openjdk.x86_64 (/usr/lib/jvm/java-11-openjdk-11.0.14.1.1-5.fc35.x86_64/bin/java)
+   3           java-latest-openjdk.x86_64 (/usr/lib/jvm/java-18-openjdk-18.0.1.0.10-1.rolling.fc35.x86_64/bin/java)
+
+Enter to keep the current selection[+], or type selection number:</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example above shows how to chose default Java environment. <code>java</code>
+command will then point to the Java implementation provided by given
+JRE.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>See <code>man alternatives</code> for more information on how to use
+<code>alternatives</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Developers may want to use Java compiler from different JDK. This can be
+achieved with <code>alternatives --config javac</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_building_classpath_with_build_classpath"><a class="anchor" href="#_building_classpath_with_build_classpath"></a>Building classpath with <code>build-classpath</code></h3>
+<div class="paragraph">
+<p>Most of the Java application needs to specify classpath in order to work
+correctly. Fedora contains several tools which make working with
+classpaths easier.</p>
+</div>
+<div class="paragraph">
+<p><code>build-classpath</code> - this tool takes JAR filenames or artifact
+coordinates as arguments and translates them to classpath-like string.
+See following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ build-classpath log4j junit org.ow2.asm:asm
+/usr/share/java/log4j.jar:/usr/share/java/junit.jar:/usr/share/java/objectweb-asm4/asm.jar</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>log4j</code> corresponds to <code>log4j.jar</code> stored in <code>%{_javadir}</code>. If the JAR
+file is stored in subdirectory under <code>%{_javadir}</code>, it is neccessary to
+pass <code>subdirectory/jarname</code> as an argument to <code>build-classpath</code>.
+Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ build-classpath httpcomponents/httpclient.jar
+/usr/share/java/httpcomponents/httpclient.jar</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_building_jar_repository_with_build_jar_repository"><a class="anchor" href="#_building_jar_repository_with_build_jar_repository"></a>Building JAR repository with <code>build-jar-repository</code></h3>
+<div class="paragraph">
+<p>Another tool is <code>build-jar-repository</code>. It can fill specified directory
+with symbolic/hard links to specified JAR files.Similarly to
+<code>build-classpath</code>, JARs can be identified by their names or artifact
+coordintes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ build-jar-repository my-repo log4j httpcomponents/httpclient junit:junit
+$ ls -l my-repo/
+total 0
+lrwxrwxrwx. 1 msrb msrb 45 Oct 29 10:39 [httpcomponents][httpclient].jar -&gt; /usr/share/java/httpcomponents/httpclient.jar
+lrwxrwxrwx. 1 msrb msrb 25 Oct 29 10:39 [junit:junit].jar -&gt; /usr/share/java/junit.jar
+lrwxrwxrwx. 1 msrb msrb 25 Oct 29 10:39 [log4j].jar -&gt; /usr/share/java/log4j.jar</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Similar command <code>rebuild-jar-repository</code> can be used to rebuild JAR
+repository previously built by <code>build-jar-repository</code>. See <code>man
+rebuild-jar-repository</code> for more information.</p>
+</div>
+<div class="paragraph">
+<p><code>build-classpath-directory</code> is a small tool which can be used to build
+classpath string from specified directory.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">$ build-classpath-directory /usr/share/java/xstream
+/usr/share/java/xstream/xstream-benchmark.jar:/usr/share/java/xstream/xstream.jar
+:/usr/share/java/xstream/xstream-hibernate.jar</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

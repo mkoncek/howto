@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled :: Local Preview</title>
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="java-packaging-howto" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Java-Packaging HOWTO</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../introduction/">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_packagers/">For Packagers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction_for_developers/">For Java Developers</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora_java_specifics/">Fedora Java Specifics for Users and Developers</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../fedora_java_packaging_specifics/">Fedora Java Specifics for Packagers</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../directory_layout/">Directory Layout</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jar_file_id/">JAR File Identification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../dependency_handling/">Dependency Handling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javadoc_packages/">Javadoc packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core_java_packages/">Core Java packages</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../packaging_best_practices/">Packaging Best Practices</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../generic_java_build/">Generic Java Builds</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ant/">Ant</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../maven/">Maven</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../packaging_maven_project/">Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mvn_macros/">Macros for Maven packaging</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="./">Macros for POM modification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../gradle/">Gradle</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../common_errors/">Common Errors</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../migration/">Migration from older tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../manpages/">Manual pages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_alias/">mvn_alias</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_artifact/">mvn_artifact</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_build/">mvn_build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_compat_version/">mvn_compat_version</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_config/">mvn_config</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_file/">mvn_file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_install/">mvn_install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_mvn_package/">mvn_package</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_dep/">pom_add_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_parent/">pom_add_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_add_plugin/">pom_add_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_change_dep/">pom_change_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_disable_module/">pom_disable_module</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_dep/">pom_remove_dep</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_parent/">pom_remove_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_remove_plugin/">pom_remove_plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_set_parent/">pom_set_parent</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_disable/">pom_xpath_disable</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_inject/">pom_xpath_inject</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_remove/">pom_xpath_remove</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_replace/">pom_xpath_replace</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../manpage_pom_xpath_set/">pom_xpath_set</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Java-Packaging HOWTO</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Java-Packaging HOWTO</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Java-Packaging HOWTO</a></li>
+    <li class="crumb HA"><a href="../maven/">Maven</a></li>
+    <li class="crumb HA"><a href="./">Macros for POM modification</a></li>
+  </ul>
+  
+</nav>
+  <div class="edit-this-page"><a href="https://pagure.io/java-packaging-howto/blob/master/f/modules/ROOT/pages/pom_macros.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect2">
+<h3 id="helper_macros"><a class="anchor" href="#helper_macros"></a>Macros for POM modification</h3>
+<div class="paragraph">
+<p>Sometimes Maven <code>pom.xml</code> files need to be patched before they are used
+to build packages. One could use traditional patches to maintain
+changes, but package maintainers should use <code>%pom_*</code> macros developed
+specially to ease this task.
+Using <code>%pom_*</code> macros not only increases readability of the spec file,
+but also improves maintainability of the package as there are no patches
+that would need to be rebased with each upstream release.</p>
+</div>
+<div class="paragraph">
+<p>There are two categories of macros:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>POM-specific macros</strong>&#8201;&#8212;&#8201;used to manipulate dependencies, modules&#8230;&#8203; Some
+of them also work on <code>ivy.xml</code> files.</p>
+</li>
+<li>
+<p><strong>Generic XML manipulation macros</strong>&#8201;&#8212;&#8201;used to add/remove/replace XML nodes</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The macros are designed to be called from <code>%prep</code> section of spec
+files. All the macros also have their own manual page.
+This document provides an overview of how they are used. For the
+technical details, refer to their respective manpages.</p>
+</div>
+<div class="paragraph">
+<div class="title">File specfication</div>
+<p>By default, a macro acts on a <code>pom.xml</code> file (or <code>ivy.xml</code> file) in the
+current directory. Different path can be explicitly specified via an
+argument (the last one, unless stated otherwise). Multiple paths can be
+specified as multiple arguments. If a path is a directory, it looks for
+a <code>pom.xml</code> file in that directory.
+For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># The following works on pom.xml file in the current directory
+%pom_remove_parent
+
+# The following works on submodule/pom.xml
+%pom_remove_parent submodule
+
+# The following works on submodule/pom.xml as well
+%pom_remove_parent submodule/pom.xml
+
+# The following works on submodule2/pom.xml and submodule2/pom.xml
+%pom_remove_parent submodule1 submodule2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Recursive mode</div>
+<p>Most macros also support <strong>recursive</strong> mode, where the change is applied
+to the <code>pom.xml</code> and all its modules recursively. This can be used, for
+example, to remove a dependency from the whole project. It is activated
+by <code>-r</code> switch.</p>
+</div>
+<div class="sect3">
+<h4 id="pom_remove_dep"><a class="anchor" href="#pom_remove_dep"></a>Dependency manipulation macros</h4>
+<div class="paragraph">
+<div class="title">Removing dependencies</div>
+<p>Often, dependencies specified in Maven <code>pom.xml</code> files need to be removed
+because of different reasons. <code>%pom_remove_dep</code> macro can be used to
+ease this task:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Removes dependency with groupId "foo" and artifactId "bar" from pom.xml
+%pom_remove_dep foo:bar
+
+# Removes dependency on all artifacts with groupId "foo" from pom.xml
+%pom_remove_dep foo:
+
+# Removes dependency on all artifacts with artifactId "bar" from pom.xml
+%pom_remove_dep :bar
+
+# Removes dependency on all artifacts with artifactId "bar" from submodule1/pom.xml
+%pom_remove_dep :bar submodule1
+
+# Removes dependency on all artifacts with artifactId "bar" from pom.xml
+# and all its submodules
+%pom_remove_dep -r :bar
+
+# Removes all dependencies from pom.xml
+%pom_remove_dep :</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Adding dependencies</div>
+<p>Dependencies can also be added to <code>pom.xml</code> with <code>%pom_add_dep</code> macro.
+Usage is very similar to <code>%pom_remove_dep</code>, see <code>"man pom_add_dep"</code> for
+more information.</p>
+</div>
+<div class="paragraph">
+<div class="title">Changing dependencies</div>
+<p>Sometimes the artifact coordinates used in upstream <code>pom.xml</code> do not
+correspond to ones used in Fedora and you need to modify them.
+<code>%pom_change_dep</code> macro will modify all dependencies matching the first
+argument to artifact coordinates specified by the second argument. Note
+this macro also works in recursive mode.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># For all artifacts in pom.xml that have groupId 'example' change it to
+# 'com.example' while leaving artifactId and other parts intact
+%pom_change_dep example: com.example:</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="pom_remove_plugin"><a class="anchor" href="#pom_remove_plugin"></a>Adding/removing plugins</h4>
+<div class="paragraph">
+<p><code>%pom_remove_plugin</code> macro works exactly as <code>%pom_remove_dep</code>, except it removes
+Maven plugin invocations. Some examples:</p>
+</div>
+<div class="listingblock">
+<div class="title">Removing Maven plugins from pom.xml files</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Disables maven-jar-plugin so that classpath is not included in manifests
+%pom_remove_plugin :maven-jar-plugin
+
+# Disable a proprietary plugin that is not packaged for Fedora
+%pom_remove_plugin com.example.mammon:useless-proprietary-plugin submodule</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Like in previous case, there is also a macro for adding plugins to
+<code>pom.xml</code>. See <code>"man pom_add_plugin"</code> for more information.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="pom_disable_module"><a class="anchor" href="#pom_disable_module"></a>Disabling unneeded modules</h4>
+<div class="paragraph">
+<p>Sometimes some submodules of upstream project cannot be built for
+various reasons and there is a need to disable them. This can be
+achieved by using <code>%pom_disable_module</code>, for example:</p>
+</div>
+<div class="listingblock">
+<div class="title">Disabling specific project modules</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Disables child-module-1, a submodule of the main pom.xml file
+%pom_disable_module child-module-1
+
+# Disables grandchild-module, a submodule of child-module-2/pom.xml
+%pom_disable_module grandchild-module child-module-2</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="pom_remove_parent"><a class="anchor" href="#pom_remove_parent"></a>Working with parent POM references</h4>
+<div class="paragraph">
+<p>Macro <code>%pom_remove_parent</code> removes the reference to its parent POM from Maven
+POM files. This can be useful when parent POM is not yet packaged (e.g.
+because of licensing issues) and at the same time it is not really needed
+for building of the project. There are also macros for adding parent POM
+reference (<code>%pom_add_parent</code>) and replacing existing reference with new
+one (<code>%pom_set_parent</code>).</p>
+</div>
+<div class="listingblock">
+<div class="title">Manipulating parent POM references</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Remove reference to a parent POM from ./pom.xml
+%pom_remove_parent
+
+# Remove reference to a parent POM from ./submodule/pom.xml
+%pom_remove_parent submodule
+
+# Add parent POM reference to ./pom.xml
+%pom_add_parent groupId:artifactId
+
+# Replace existing parent POM reference in ./pom.xml
+%pom_set_parent groupId:artifactId:version</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="pom_xpath_remove"><a class="anchor" href="#pom_xpath_remove"></a>Macros for performing generic modifications</h4>
+<div class="paragraph">
+<p>The above macros cover the most common cases of modifying <code>pom.xml</code>
+files, however if there is a need to apply some less-common patches
+there are also three generic macros for modifying <code>pom.xml</code> files.
+These generic macros can also be applied to other XML files, such as
+Ant&#8217;s <code>build.xml</code> files.</p>
+</div>
+<div class="paragraph">
+<p>They all take a <a href="http://www.w3.org/TR/xpath/">XPath</a> 1.0 expression
+that selects XML nodes to be acted on (removed, replaced&#8230;&#8203;).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Handling XML namespaces</div>
+<div class="paragraph">
+<p>POM files use a specific namespace - http://maven.apache.org/POM/4.0.0.
+The easiest way to respect this namespace in XPath expressions is
+prefixing all node names with <code>pom:</code>. For example,
+<code>pom:environment/pom:os</code> will work because it selects nodes from <code>pom</code>
+namespace, but <code>environment/os</code> will not find anything because it looks for
+nodes that do not belong to any XML namespace. It is needed even if the
+original POM file did not contain proper POM namespace, since it will be
+added automatically. Note that this requirement is due to limitation of
+XPath 1.0 and we cannot work it around.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<div class="title">Removing nodes</div>
+<p><code>%pom_xpath_remove</code> can be used to remove arbitrary XML nodes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Removes extensions from the build
+%pom_xpath_remove "pom:build/pom:extensions" module/pom.xml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Injecting nodes</div>
+<p><code>%pom_xpath_inject</code> macro is capable of injecting arbitrary
+XML code to any <code>pom.xml</code> file. The injected code is the last argument&#8201;&#8212;&#8201;optional file paths go before it (unlike most other macros).
+To pass a multiline snippet, quote the argument as in the following
+example.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Add additional exclusion into maven-wagon dependency
+%pom_xpath_inject "pom:dependency[pom:artifactId='maven-wagon']/pom:exclusions" "
+&lt;exclusion&gt;
+    &lt;groupId&gt;antlr&lt;/groupId&gt;
+    &lt;artifactId&gt;antlr&lt;/artifactId&gt;
+&lt;/exclusion&gt;"
+# The same thing, but with explicit file path
+%pom_xpath_inject "pom:dependency[pom:artifactId='maven-wagon']/pom:exclusions" pom.xml "
+&lt;exclusion&gt;
+    &lt;groupId&gt;antlr&lt;/groupId&gt;
+    &lt;artifactId&gt;antlr&lt;/artifactId&gt;
+&lt;/exclusion&gt;"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Changing nodes' content</div>
+<p><code>%pom_xpath_set</code> replaces content of the arbitrary XML nodes
+with specified value (can contain XML nodes).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Change groupId of a parent
+%pom_xpath_set "pom:parent/pom:groupId" "org.apache"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Replacing nodes</div>
+<p><code>%pom_xpath_replace</code> replaces a XML node with specified XML code.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-spec hljs" data-lang="spec"># Change groupId of a parent (note the difference from %pom_xpath_set)
+%pom_xpath_replace "pom:parent/pom:groupId" "&lt;groupId&gt;org.apache&lt;/groupId&gt;"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

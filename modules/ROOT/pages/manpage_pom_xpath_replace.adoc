@@ -1,0 +1,6 @@
+=== pom_xpath_replace
+
+++++++++++++++++++++++++++
+
+include::example$manpages/pom_xpath_replace.7.html[]
+++++++++++++++++++++++++++

@@ -1,0 +1,6 @@
+=== pom_disable_module
+
+++++++++++++++++++++++++++
+
+include::example$manpages/pom_disable_module.7.html[]
+++++++++++++++++++++++++++

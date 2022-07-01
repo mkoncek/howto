@@ -1,0 +1,6 @@
+=== pom_xpath_inject
+
+++++++++++++++++++++++++++
+
+include::example$manpages/pom_xpath_inject.7.html[]
+++++++++++++++++++++++++++

@@ -1,0 +1,6 @@
+=== mvn_artifact
+
+++++++++++++++++++++++++++
+
+include::example$manpages/mvn_artifact.7.html[]
+++++++++++++++++++++++++++
