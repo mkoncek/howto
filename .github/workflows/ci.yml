@@ -1,0 +1,16 @@
+name: Continuous Integration
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: docker.io/fedora:rawhide
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v2
+      - name: Uname
+        run: "uname -a"
