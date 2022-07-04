@@ -21,6 +21,11 @@ Source0:    %{name}.tar.gz
 # scripts or regular Java programs (not JNI libraries), should be marked as 'noarch'
 BuildArch:  noarch
 
+# Since Fedora 37, java packages must contain this line since the i686
+# arhitecture is no longer suported
+# Append 'noarch' only if BuildArch is 'noarch' too
+ExclusiveArch:  %{java_arches} noarch
+
 # Project's build time dependency. We don't really need JUnit, it just
 # serves as and example
 BuildRequires: junit
