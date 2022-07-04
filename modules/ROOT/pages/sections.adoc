@@ -15,7 +15,6 @@
 ** xref:packaging_maven_project.adoc[Packaging]
 ** xref:mvn_macros.adoc[Macros for Maven packaging]
 ** xref:pom_macros.adoc[Macros for POM modification]
-* xref:gradle.adoc[Gradle]
 * xref:common_errors.adoc[Common Errors]
 
 
