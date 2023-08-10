@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi4 { text-decoration: underline; }
+.ansi34 { color: #0000aa; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+JAVA_REMOVE_IMPORTS(7)              Jurand              JAVA_REMOVE_IMPORTS(7)
+
+
+
+<span class="ansi1">NAME</span>
+       java_remove_imports - remove import statements from Java source files
+
+<span class="ansi1">SYNOPSIS</span>
+       <span class="ansi1">%java_remove_imports </span>[optional flags] &lt;matcher&gt;... [file path]...
+
+<span class="ansi1">DESCRIPTION</span>
+       This macro removes import statements from Java source files. The script
+       matches all non-whitespace content following the <span class="ansi4">import</span> <span class="ansi4">[static]</span>
+       statement against all patterns provided via the <span class="ansi1">-p </span>flag and all simple
+       class names against names provided by the <span class="ansi1">-n </span>flag.
+
+       File path arguments are handled the following way:
+
+       •   Symlinks are ignored
+
+       •   Regular files are handled regardless of the file name
+
+       •   Directories are traversed recursively and all .java files are
+           handled
+
+       Arguments can be specified in arbitrary order.
+
+       Matcher is one of:
+
+       <span class="ansi1">-n &lt;name&gt;</span>
+           Simple class name to be matched against the simple names of
+           imported symbols. Names are matched for exact equality. Can be
+           specified multiple times.
+
+       <span class="ansi1">-p &lt;pattern&gt;</span>
+           Regex patterns to be matched against imported symbols. Each
+           imported symbol found in the code is matched against each pattern.
+           Can be specified multiple times.
+
+       Optional flags:
+
+       <span class="ansi1">-s, --strict</span>
+           Fail if any of the user provided arguments were redundant.
+
+<span class="ansi1">EXAMPLES</span>
+       Example of usage:
+
+       <span class="ansi1">%java_remove_imports src -n Nullable</span>
+
+       Examples of patterns:
+
+       •   Import statements present in Java source file:
+
+               1) import java.lang.Runnable;
+               2) import java.util.List;
+               3) import static java.util.*;
+               4) import static java.lang.String.valueOf;
+               5) import com.google.common.util.concurrent.Service;
+
+       •   Names used to match:
+
+               Name 'Runnable' matches 1)
+               Name 'String' matches 4)
+
+               Name 'util' does not match anything.
+               Name '*' does not match anything.
+               Name 'valueOf' does not match anything.
+
+       •   Patterns used to match:
+
+               Pattern 'Runnable' matches 1).
+               Pattern '[*]' matches 3).
+               Pattern 'java[.]util' matches 2), 3).
+               Pattern 'util' matches 2), 3), 5).
+               Patterns 'java', 'java.*' match 1) - 4).
+
+               Pattern 'static' does not match anything.
+
+<span class="ansi1">AUTHOR</span>
+       Written by Marián Konček.
+
+<span class="ansi1">REPORTING BUGS</span>
+       Bugs should be reported through the issue tracker at GitHub:
+       <span class="ansi34"></span><span class="ansi1 ansi34">https://github.com/fedora-java/jurand/issues</span><span class="ansi1"></span>.
+
+<span class="ansi1">SEE ALSO</span>
+       <span class="ansi1">java_remove_annotations</span>(7).
+
+
+
+JURAND                            03/15/2023            JAVA_REMOVE_IMPORTS(7)
+
+</pre>
+</body>
+
+</html>

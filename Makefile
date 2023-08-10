@@ -23,6 +23,8 @@ manpages :=\
 	pom_xpath_remove\
 	pom_xpath_replace\
 	pom_xpath_set\
+	java_remove_annotations\
+	java_remove_imports\
 
 source_dir := modules/ROOT
 pages = $(shell find $(source_dir)/pages -type f)

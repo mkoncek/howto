@@ -114,3 +114,13 @@ include::{EXAMPLE}manpages/pom_xpath_replace.7.html[]
 include::{EXAMPLE}manpages/pom_xpath_set.7.html[]
 ++++++++++++++++++++++++++
 
+=== java_remove_annotations
+++++++++++++++++++++++++++
+include::{EXAMPLE}manpages/java_remove_annotations.7.html[]
+++++++++++++++++++++++++++
+
+=== java_remove_imports
+++++++++++++++++++++++++++
+include::{EXAMPLE}manpages/java_remove_imports.7.html[]
+++++++++++++++++++++++++++
+

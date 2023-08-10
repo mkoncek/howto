@@ -3,9 +3,25 @@
 Packaging Java has certain specifics that will be covered in this section which
 will cover basic packaging principles
 
- * No bundling
- * Working with upstreams
- * Commenting workarounds
- * Single library version
- * Links to other appropriate documents
- * ...
+* No bundling
+* Working with upstreams
+* Commenting workarounds
+* Single library version
+* Links to other appropriate documents
+* ...
+
+=== Patching
+
+==== Annotation removal
+
+Some Java packages use annotations which are not needed for their proper
+function. These often include annotations for static code analysis, like
+`@SuppressFBWarnings`. While most cases can be patched out using patches or
+using `sed`, annotations can span multiple lines and can contain nested strings
+with variable content. For this situation `javapackages-extra` package contains
+macro which can be used to remove annotations from Java sources. It is used as
+follows:
+
+    %java_remove_annotations src -n SuppressFBWarnings
+
+See the manual page of <<_java_remove_annotations, `%java_remove_annotations`>> for more details.

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi4 { text-decoration: underline; }
+.ansi34 { color: #0000aa; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+JAVA_REMOVE_ANNOTATI(7)             Jurand             JAVA_REMOVE_ANNOTATI(7)
+
+
+
+<span class="ansi1">NAME</span>
+       java_remove_annotations - remove imports and annotations from Java
+       source files
+
+<span class="ansi1">SYNOPSIS</span>
+       <span class="ansi1">%java_remove_annotations </span>[optional flags] &lt;matcher&gt;... [file path]...
+
+<span class="ansi1">DESCRIPTION</span>
+       This macro removes import statements as well as usage of annotations
+       from Java source files. The does the same as <span class="ansi1">java_remove_imports </span>and on
+       top of that finds all uses of annotations and matches the content
+       between the <span class="ansi4">@</span> symbol and either ending with whitespace or with an
+       opening parethesis <span class="ansi4">(</span>.
+
+       In case of match, the script also removes the block of paretheses that
+       follows the matched annotation, if it is present.
+
+       File path arguments are handled the following way:
+
+       •   Symlinks are ignored
+
+       •   Regular files are handled regardless of the file name
+
+       •   Directories are traversed recursively and all .java files are
+           handled
+
+       Arguments can be specified in arbitrary order.
+
+       Matcher is one of:
+
+       <span class="ansi1">-n &lt;name&gt;</span>
+           Simple class name to be matched against the simple names of
+           imported symbols. Names are matched for exact equality. Can be
+           specified multiple times.
+
+       <span class="ansi1">-p &lt;pattern&gt;</span>
+           Regex patterns to be matched against imported symbols. Each
+           imported symbol found in the code is matched against each pattern.
+           Can be specified multiple times.
+
+       Optional flags:
+
+       <span class="ansi1">-s, --strict</span>
+           Fail if any of the user provided arguments were redundant.
+
+<span class="ansi1">EXAMPLES</span>
+       Example of usage:
+
+       <span class="ansi1">%java_remove_annotations src -n Nullable</span>
+
+       Examples of patterns:
+
+       •   Annotations present in Java source file:
+
+               1) @SuppressWarnings
+               2) @SuppressFBWarnings(value = {"EI_EXPOSE_REP", "EI_EXPOSE_REP2"})
+               3) @org.junit.Test
+               4) @org.junit.jupiter.api.Test
+
+       •   Names used to match:
+
+               Name 'SuppressWarnings' matches 1)
+               Name 'Test' matches 3), 4).
+
+               Name 'junit' does not match anything.
+
+       •   Patterns used to match:
+
+               Pattern 'SuppressWarnings' matches 1).
+               Pattern 'Suppress' matches 1), 2).
+               Pattern 'org[.]junit[.]Test' matches 3).
+               Pattern 'junit' matches 3), 4).
+
+               Pattern '@SuppressWarnings' does not match anything.
+               Pattern 'EI_EXPOSE_REP' does not match anything.
+
+<span class="ansi1">AUTHOR</span>
+       Written by Marián Konček.
+
+<span class="ansi1">REPORTING BUGS</span>
+       Bugs should be reported through the issue tracker at GitHub:
+       <span class="ansi34"></span><span class="ansi1 ansi34">https://github.com/fedora-java/jurand/issues</span><span class="ansi1"></span>.
+
+<span class="ansi1">SEE ALSO</span>
+       <span class="ansi1">java_remove_imports</span>(7).
+
+
+
+JURAND                            03/15/2023           JAVA_REMOVE_ANNOTATI(7)
+
+</pre>
+</body>
+
+</html>
